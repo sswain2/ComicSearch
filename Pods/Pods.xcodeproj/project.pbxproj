@@ -1,0 +1,1207 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00526741FFB5AA51C8A8191B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A198C253A8D694DCDD608 /* Foundation.framework */; };
+		00D966FB99B2D744C746FEB7 /* RACDynamicSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 11117BD090A4F4F7419B3868 /* RACDynamicSequence.m */; };
+		0152A4CEB0EEB8FB81100AEE /* RACStream+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C636F67FF5D525BF4B7B58E /* RACStream+Private.h */; };
+		019CF249B43D9936ADF87845 /* RACDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E594745D491DDAFEB7865C /* RACDelegateProxy.m */; };
+		021DF907BFD64850B95B4CD0 /* NSDictionary+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9088BD564DD51D2A0DEBAC6B /* NSDictionary+RACSequenceAdditions.m */; };
+		02812C310199B4B9011DD6FA /* RACBlockTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 85004AB4A6D9A3DD74530EE7 /* RACBlockTrampoline.h */; };
+		031626D5038282C03B430EE9 /* RACSubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E544F22410EBAEC27E75EA /* RACSubject.h */; };
+		04EB6B5A58EF24E2EC8D5451 /* RACTargetQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 455B0B43E27BCAD184F86EA9 /* RACTargetQueueScheduler.h */; };
+		053C28B8F60D32764F71A6A3 /* RACEmptySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 48655644AB72E821D6F6649B /* RACEmptySequence.h */; };
+		072F61A5D998D4DA33590BFB /* NSObject+RACSelectorSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 80151C1160DC0E2C44E7E450 /* NSObject+RACSelectorSignal.h */; };
+		07860F5515DE8B8604F1644A /* RACDynamicSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4306887990F214A01D157E90 /* RACDynamicSignal.m */; };
+		0BA3E3A6B67D2852B2891037 /* RACUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8551DDCD116473878F2D08DA /* RACUnit.m */; };
+		0D270F904069B625324A719F /* RACGroupedSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = E99C0C7B6C67B87FE77CA78C /* RACGroupedSignal.m */; };
+		0D8B505B846D270799F70EEB /* RACEagerSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4DEDCDC5BFFD6CB52DF892 /* RACEagerSequence.h */; };
+		0F010CB7A868D269EA2DAE80 /* UIBarButtonItem+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2123DF34E11E0D64C6DA0D97 /* UIBarButtonItem+RACCommandSupport.m */; };
+		0F12510F7C1173DFE4B0E0EA /* RACReturnSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 026B1FDEFF6F8B6EAE502388 /* RACReturnSignal.h */; };
+		0FC3D11891E374EF198773A1 /* RACErrorSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = E7605749F9BB30615EFFFAF0 /* RACErrorSignal.h */; };
+		109F7128C7E092DEC04C169C /* UISwitch+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFBB98FFC4800B2DCA6AE37 /* UISwitch+RACSignalSupport.h */; };
+		11829985233883EC02CE10F0 /* RACUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E24F6135D78C4F951645839 /* RACUnit.h */; };
+		1195EA620608E8F9C629C920 /* RACChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB472A4B63C345B5360FB02 /* RACChannel.h */; };
+		11A7D61BBAA0B3192EA10533 /* RACMulticastConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFF19A57316F70DDE2F793F /* RACMulticastConnection.m */; };
+		11AEDC9E4AF91FCDA3E80FBB /* RACObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7175960BE19A7411AF03CCE1 /* RACObjCRuntime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		122AAD4E1BBFE06A8094490C /* MKAnnotationView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD8A0048A3B6E9E8FC3697 /* MKAnnotationView+RACSignalSupport.m */; };
+		14D7826AB9A8E615F20D43F9 /* NSFileHandle+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5883238BFFA1ACBEFF8561 /* NSFileHandle+RACSupport.m */; };
+		15080844139D76AB5E3F971E /* UIActionSheet+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F0CE9A45E164CEB4CCDDF1 /* UIActionSheet+RACSignalSupport.m */; };
+		18F1BF34961FCEA108F6B5E3 /* NSDictionary+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD01E057B837FACFBD6D281 /* NSDictionary+RACSequenceAdditions.h */; };
+		19C6C44627B3B50F0AF5504B /* RACStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F174132CFA84AFF957F86 /* RACStream.m */; };
+		1B7DB408033BF3D02DB9407F /* RACScopedDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A6C10D516DF1A105D5314B /* RACScopedDisposable.h */; };
+		1D29BDBE577B37501F44AD03 /* RACTestScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 78AC5F678953A2E310D657FE /* RACTestScheduler.h */; };
+		1E51F1B55933104C9CA1CC59 /* RACCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F832DB8E5A229A3E6BDAB9 /* RACCommand.h */; };
+		2092F6CFA2F1C4C8F0FCEC6C /* UICollectionReusableView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F684D79D88262D37508058A /* UICollectionReusableView+RACSignalSupport.m */; };
+		20FF6870037E572203887625 /* RACSignal+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA33DFCC494D76E5AD1659F /* RACSignal+Operations.m */; };
+		21DD42F9FFCF5CF53E37262F /* UITableViewCell+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B78E8B0DE59861E2E5BAE94 /* UITableViewCell+RACSignalSupport.h */; };
+		21FBE67E1622A0C765955CC8 /* RACSignalSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 774D5C2628326100F0BDF5E0 /* RACSignalSequence.h */; };
+		22439E64933B4DEB14BF53BA /* RACEXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E33C47C7ADD94F45B731F3 /* RACEXTScope.h */; };
+		2276E7AD8E72EC6188695467 /* NSData+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D524B127E42CA0BB9E8B47D /* NSData+RACSupport.h */; };
+		2516C6E8E6DDEE236997BA0F /* NSOrderedSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D05449AB36C5046AD54B966D /* NSOrderedSet+RACSequenceAdditions.h */; };
+		278911265AA06A9166646786 /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA81E09C931638C0EA8CDBB /* UITextView+RACSignalSupport.h */; };
+		28CB40872C415F67420D391E /* RACTupleSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FEFDA5F5BA63203C5E0980 /* RACTupleSequence.m */; };
+		2AC1002F5ADA6EE46ED66830 /* RACmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DAB3026C2374A894A30F22 /* RACmetamacros.h */; };
+		2B83B4DE9537CA526F0FB498 /* RACDynamicSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEC0521C6C4920DC334A684 /* RACDynamicSignal.h */; };
+		300BF5E0666A93909ED94CED /* RACSubscriber+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D7BD91CC38617628687B74 /* RACSubscriber+Private.h */; };
+		3015DCC02584DFB823865FE1 /* RACPassthroughSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = F77B3151312A7075C3E5769B /* RACPassthroughSubscriber.h */; };
+		3109B0797EF6CB3FE67DBBB3 /* RACArraySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 151C3D3E44FA0197C96C4F6E /* RACArraySequence.h */; };
+		3259F487CB3100068E1F148C /* RACQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4E60DBA29C1F911D6B9413 /* RACQueueScheduler.h */; };
+		370BBB3241463506417678FB /* NSEnumerator+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EA2A7A2847F5264090807D /* NSEnumerator+RACSequenceAdditions.h */; };
+		3734577C764092ACDA8EA496 /* UIAlertView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C5022BDA72C3E29A6FC1DC79 /* UIAlertView+RACSignalSupport.h */; };
+		380F808EC83245E12C85D3FD /* UIRefreshControl+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4544D4127D83B274A4B5ED1E /* UIRefreshControl+RACCommandSupport.h */; };
+		382FE6BDEBDFEBDFC88B5DE3 /* NSSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A2F7F564969CCCB0083788 /* NSSet+RACSequenceAdditions.h */; };
+		3B65EB767098DFF771EF2B38 /* RACSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DEAF5A5587A14FCF2EAACD1 /* RACSignal.h */; };
+		3DB48CE882644810C5A470F8 /* RACGroupedSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2212F2685CFF5A2CD1A762B1 /* RACGroupedSignal.h */; };
+		3E12720653F2BE68E3730CA6 /* RACCompoundDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = C48A86F49CCD99C62420168D /* RACCompoundDisposable.m */; };
+		40D1EE075424FA008B5E9891 /* UIBarButtonItem+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AC406BC772522E2A6D03EC /* UIBarButtonItem+RACCommandSupport.h */; };
+		4138D8A898503A3D956250DE /* UIAlertView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14EAE7B02F2B0F819076E1 /* UIAlertView+RACSignalSupport.m */; };
+		415DA86C91A3FB48F629CB03 /* RACChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F47CEE101AECDBB92DB8CD /* RACChannel.m */; };
+		41FD367569A8683B58392955 /* RACScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB817C714C574976E35A43C /* RACScheduler.m */; };
+		430455433120B4B1414ED8F9 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 52934EDE8A53E9F45145D5F8 /* UITextField+RACSignalSupport.m */; };
+		43944B5DD704E344655C8DD2 /* RACScheduler+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A628A2FEACC9356FB45D7F /* RACScheduler+Subclass.h */; };
+		48C86DCC0E71A9038E347E7A /* RACSubscriptingAssignmentTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 411E43478CDC8B865F3B0584 /* RACSubscriptingAssignmentTrampoline.m */; };
+		4B2E4C0A1A6750394589BD3A /* NSObject+RACPropertySubscribing.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB85FBCD3D731AC2FF95E4C /* NSObject+RACPropertySubscribing.m */; };
+		4BFB778153520CF45EDDC027 /* RACKVOProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F42C519ECFBB20B0F9E68F /* RACKVOProxy.h */; };
+		4E1A01F769ED8ED25E90F4C2 /* RACScheduler+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BC34B7D690AF3A5CC6DD7A55 /* RACScheduler+Private.h */; };
+		4FDE2A247F1BD50C49386A08 /* UIControl+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 849AC5BA78FC7B789CECA495 /* UIControl+RACSignalSupport.h */; };
+		51FB2E9339C192D39002C9DA /* UIControl+RACSignalSupportPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = B4232140B302B8775C9B969F /* UIControl+RACSignalSupportPrivate.h */; };
+		542829150C08655A656B9D72 /* UIImagePickerController+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 013715FB0AF1EEA8CB58BE51 /* UIImagePickerController+RACSignalSupport.h */; };
+		54962B0B57A1BCDE947251BE /* NSObject+RACLifting.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BFB27048EF90AC067DDE41 /* NSObject+RACLifting.m */; };
+		555957F2E31D98659891EA50 /* Pods-ComicSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8754FA5B2A3571489EA5130C /* Pods-ComicSearch-dummy.m */; };
+		55C2534DEC4440319C228F16 /* RACEagerSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B2AEB1E88671521284BF4E /* RACEagerSequence.m */; };
+		55F277E83EFA087A7B832B5A /* RACEmptySignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4A19D84E3E72F83F088551 /* RACEmptySignal.m */; };
+		5BB3FFE5D9754CD4A72E9049 /* NSInvocation+RACTypeParsing.h in Headers */ = {isa = PBXBuildFile; fileRef = F283E07DD99878AC45A58B96 /* NSInvocation+RACTypeParsing.h */; };
+		5C07165E1B66E691AE68A828 /* UITableViewCell+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DB904699510EC153DE3AE1 /* UITableViewCell+RACSignalSupport.m */; };
+		5E11A5801619B90550B08376 /* RACSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = F036B469A1692B933114704C /* RACSubscriber.m */; };
+		5F4DD85635B7C7DFF18ABD67 /* UIGestureRecognizer+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = B947AD366F459086732AA1E7 /* UIGestureRecognizer+RACSignalSupport.h */; };
+		63A33ED00365A7F30BD65BC0 /* UIDatePicker+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC9650EF77418E2E730E6F /* UIDatePicker+RACSignalSupport.m */; };
+		63D36FE1DFE6E6D39A6664D0 /* NSObject+RACSelectorSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E0A25A881AC68C67C0F262 /* NSObject+RACSelectorSignal.m */; };
+		66047366EE73DBCBA339C1DC /* UIGestureRecognizer+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF93116DE3622D8901ECD8D6 /* UIGestureRecognizer+RACSignalSupport.m */; };
+		6821885AAF03DB5DED6BBD0C /* NSArray+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF1E9BF4D7A323F427954AF /* NSArray+RACSequenceAdditions.h */; };
+		68506FA8B3AB73414C1501AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8A198C253A8D694DCDD608 /* Foundation.framework */; };
+		687AFD0A4CF81EF3687F3075 /* NSArray+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D933E759460076FED10 /* NSArray+RACSequenceAdditions.m */; };
+		69F2A7923EEBB18B905D851F /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E55712615DB7E168A047030 /* UITableViewHeaderFooterView+RACSignalSupport.m */; };
+		6A58825110E726130F83C6D4 /* NSObject+RACDeallocating.h in Headers */ = {isa = PBXBuildFile; fileRef = 4365562B2B4B545E266CBA03 /* NSObject+RACDeallocating.h */; };
+		6C4A3957B06CFF9A38180330 /* NSObject+RACKVOWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B350CEDFCC867B9F5BC2049 /* NSObject+RACKVOWrapper.m */; };
+		6E06328E4CEFCC4165574419 /* RACEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CA07EB1DC50E904FB1E49913 /* RACEvent.h */; };
+		6FB817955A7252985EEDE753 /* RACErrorSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D142F866B21444EA3BA422 /* RACErrorSignal.m */; };
+		71FA4F45CBC94E74F8C04785 /* NSIndexSet+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 91503BC14B0E5E3D250F2927 /* NSIndexSet+RACSequenceAdditions.h */; };
+		7257667D8A15A3EEB1DE9B7A /* RACEXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F82A3FA63389C283BD2E715 /* RACEXTKeyPathCoding.h */; };
+		787301FF05C443B9802E791A /* RACCompoundDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 798D8A58904092062BD35215 /* RACCompoundDisposable.h */; };
+		7A977A4A2B0E0689B99366CF /* NSString+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DC75AE1E340FAAFF596F8955 /* NSString+RACSupport.m */; };
+		7AEC5000CF5E19AEB8C6829D /* NSObject+RACDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F87A34445D35EE40B0917BE /* NSObject+RACDescription.h */; };
+		7B4193E40BDD58DF293F9F7C /* NSUserDefaults+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = F3589F7A1CB509FA44B008AB /* NSUserDefaults+RACSupport.h */; };
+		7CAED81954DC602A963E9D50 /* RACQueueScheduler+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = B6ECC5837873FA5BED139FED /* RACQueueScheduler+Subclass.h */; };
+		7CCBD16800464B1D91FC8D27 /* RACIndexSetSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B38D39970EEAABDAC7ECF03F /* RACIndexSetSequence.m */; };
+		7DCB5E6CAD85DD60079F0970 /* NSInvocation+RACTypeParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C7738C504FE72D0A3F802 /* NSInvocation+RACTypeParsing.m */; };
+		7FAEA7BA12F9D0C46FC9A27B /* UIControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9759F6468AF0EE6B7197CD /* UIControl+RACSignalSupport.m */; };
+		80CF4ED8A569E17675335E2F /* UISegmentedControl+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 846A7614202F4662CC92F2C6 /* UISegmentedControl+RACSignalSupport.h */; };
+		83EC419FE5A47AE56C83B698 /* RACStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DACC44942817FC21B974590 /* RACStream.h */; };
+		842A4056A1BC4C024BDBEF85 /* RACKVOTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 858EA2CF0CFC902FC9B82A55 /* RACKVOTrampoline.h */; };
+		8494A6F747D1929D82C224DF /* NSString+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 09761B9818B1D9042B6724C5 /* NSString+RACSequenceAdditions.h */; };
+		84F9C20B5900BA48C30FA446 /* NSIndexSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA623C4934E78B864944ED06 /* NSIndexSet+RACSequenceAdditions.m */; };
+		850EA17EAC733D13444DBB6A /* NSSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B40717173A45A92039B788B9 /* NSSet+RACSequenceAdditions.m */; };
+		889C3E3ED0D0C4763A6378CE /* RACUnarySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = D949539607ACB4F2DC02B57B /* RACUnarySequence.m */; };
+		8ABCA6357A6D0D6058BD0F35 /* NSEnumerator+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBCBFCBE19773D2F6D9081 /* NSEnumerator+RACSequenceAdditions.m */; };
+		8CAF278A9EFD776C0973D0C9 /* UISlider+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0A61E544B97E7A0F07EECD /* UISlider+RACSignalSupport.h */; };
+		8CF07CE6648EC48F630F822D /* UIStepper+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F47097395C291E82661D5D /* UIStepper+RACSignalSupport.h */; };
+		8F1E39746F048E7D2BADA02B /* RACEmptySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAAB8C485D1F3ADE19E312A /* RACEmptySequence.m */; };
+		9808BC861FFC7E3E607DECB0 /* RACReplaySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1F639886AD3B98594B7693 /* RACReplaySubject.m */; };
+		9888601E900D11A592C9F140 /* RACSignal+Operations.h in Headers */ = {isa = PBXBuildFile; fileRef = E365E8B46777E5AD725CFF83 /* RACSignal+Operations.h */; };
+		98D874E552560E4E796220C4 /* RACValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F5B5C5C0170F568D40ADF1 /* RACValueTransformer.m */; };
+		9BAB30B21C2ABDDAC06C55CD /* RACDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 556452DADECEB669C62ADDA2 /* RACDisposable.h */; };
+		9BB22B84343F7738669A2F33 /* UIActionSheet+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C380D0E6943139E5F6D58E /* UIActionSheet+RACSignalSupport.h */; };
+		9D3E1C9BE728F3D5DCE51918 /* RACSubscriptingAssignmentTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F955D6A39809AA4C51F4F3C /* RACSubscriptingAssignmentTrampoline.h */; };
+		9D4E55D0205111E98E9D0CAE /* NSURLConnection+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF0A17986DF759A86AE65B1 /* NSURLConnection+RACSupport.m */; };
+		A1E482F26F3DE5285E4F614E /* ReactiveCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D2F031ABAE5BBE247B8988 /* ReactiveCocoa.h */; };
+		A1E9292975D1EDD590B0D94E /* NSObject+RACKVOWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB16B7DF689030D1EE74C4 /* NSObject+RACKVOWrapper.h */; };
+		A2A5B3998F162C4DC55DD187 /* RACSignalSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C9825B374B6C3C9B0F5D09 /* RACSignalSequence.m */; };
+		A30B29259647EBD1605B6D95 /* RACQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C1458243ECE79FD8530D5C70 /* RACQueueScheduler.m */; };
+		A37B69CFBA743B10D6E02D0A /* RACCompoundDisposableProvider.d in Sources */ = {isa = PBXBuildFile; fileRef = F6C14877CB54BB6A55B0BBD7 /* RACCompoundDisposableProvider.d */; };
+		A456A22DA21A16E8DCD594AE /* RACPassthroughSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38562E30D7C235F6BFA537 /* RACPassthroughSubscriber.m */; };
+		A5F8E7077F531770567F2137 /* NSObject+RACPropertySubscribing.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C83B10BDF2A14600710260 /* NSObject+RACPropertySubscribing.h */; };
+		A6076CB070EEB99CDB334556 /* RACMulticastConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD6318C582F38E8424EF9B9 /* RACMulticastConnection+Private.h */; };
+		A641A1D5727917C315657CC4 /* RACSerialDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = A122876DB7196DB266ECEAE5 /* RACSerialDisposable.m */; };
+		A7830608A95E5EDAE16FAAD1 /* RACReplaySubject.h in Headers */ = {isa = PBXBuildFile; fileRef = F3498C2E1AAD4BA81136BDE2 /* RACReplaySubject.h */; };
+		A9002DDC3F6051EE253184E6 /* UISwitch+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = D44940438635E184CB1F9BD5 /* UISwitch+RACSignalSupport.m */; };
+		A9F96FBA48838200E5094B1A /* RACTargetQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 586A6D1E33F7CD3244A21429 /* RACTargetQueueScheduler.m */; };
+		AC0ACC866F0F13941EDCD681 /* NSUserDefaults+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 846297E0D9C7A94646F0583E /* NSUserDefaults+RACSupport.m */; };
+		AC5C63300701CBD3B16E1E8D /* RACTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = A54F458A8711CC2D6652D574 /* RACTuple.h */; };
+		ACF31BC6A4E0693F986097C6 /* RACDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 724A7575CF174FBE606BDDAA /* RACDisposable.m */; };
+		AE718CF128DD822C91083346 /* RACTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = C659594A144F3853CFF29E52 /* RACTuple.m */; };
+		AF50E2639BB417D3418351CA /* NSString+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C12A3F6D3D54A3D3B6D0FCC3 /* NSString+RACSupport.h */; };
+		B03AFFC009183B8F8158E1ED /* NSOrderedSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DBB87F977EDA8C45932F5F /* NSOrderedSet+RACSequenceAdditions.m */; };
+		B16AEC05D5C0811D4B14AABE /* NSURLConnection+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A806B3C99422541799292D6 /* NSURLConnection+RACSupport.h */; };
+		B1FF8B3460E7F296B67413AB /* RACBlockTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = C90C621AB76381337F63A1C5 /* RACBlockTrampoline.m */; };
+		B2DC606C7BDAA013407EA9B2 /* NSFileHandle+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 313874DDCF581259DDF01256 /* NSFileHandle+RACSupport.h */; };
+		B331D686FA36B0938E8EB302 /* RACReturnSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CB851A4C2CF7E22EFBF1E6 /* RACReturnSignal.m */; };
+		B405D1F6955DC9BBABD72504 /* RACKVOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DE1C154228EBA436EB860A /* RACKVOProxy.m */; };
+		B4CD20E8227E8F378F4A8A96 /* RACBehaviorSubject.h in Headers */ = {isa = PBXBuildFile; fileRef = 817696765C0AC0CBCA775A65 /* RACBehaviorSubject.h */; };
+		B53059C5D5853FCBD060110B /* RACSignalProvider.d in Sources */ = {isa = PBXBuildFile; fileRef = 61F1E4CE904897D0F39F40FD /* RACSignalProvider.d */; };
+		B59EA9D9485CC9CFE74F91E5 /* UITextField+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = FE545BC3390138315218C029 /* UITextField+RACSignalSupport.h */; };
+		B6F00FDD9F6DAD9FA906B561 /* UICollectionReusableView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA610CDB2BF560A653A9413 /* UICollectionReusableView+RACSignalSupport.h */; };
+		BCA4E2F35113AB1A6DDBF904 /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C1709AC43953347A0B089D /* UITableViewHeaderFooterView+RACSignalSupport.h */; };
+		BD5AEDD84BBD509D76213DDE /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC81DF5D3B25425C3225464 /* UITextView+RACSignalSupport.m */; };
+		BD6D13839732A4F754423E76 /* UIButton+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1E514E7C340EACB4B898CC /* UIButton+RACCommandSupport.m */; };
+		BE83EEC8446BE12CAC42C4FD /* RACScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 170072051085D97D9A4F2726 /* RACScheduler.h */; };
+		C1B0D454621911D89E80C5E0 /* NSString+RACKeyPathUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 93215A8140DA4FE75B03262D /* NSString+RACKeyPathUtilities.h */; };
+		C1C49D5C638AC921EDAACE28 /* RACValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4354B849CA24E15A36595A17 /* RACValueTransformer.h */; };
+		C3C643E287A1551AF67D8061 /* RACSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C96BBD8E227EC026B7F8C4 /* RACSequence.h */; };
+		C538E7B26AAE7AE213250402 /* UIButton+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2D1267013B131324A4D17 /* UIButton+RACCommandSupport.h */; };
+		C7F9B17F7DEEB204C493B820 /* UIRefreshControl+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 500060CC42FE8BD27F531CD6 /* UIRefreshControl+RACCommandSupport.m */; };
+		C8FF4715A1443B0593F2C14C /* RACKVOChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B4D07D5F804A57379FD4F7 /* RACKVOChannel.h */; };
+		C9C23EE910144AFE05E34671 /* RACImmediateScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0D3A9BF246B8BCD8C620A /* RACImmediateScheduler.m */; };
+		CB8E8441DA09749DCBB0C0D6 /* UISegmentedControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E27D377DA87F079859A3B90 /* UISegmentedControl+RACSignalSupport.m */; };
+		CC387C910215B16838CA4F70 /* UIImagePickerController+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB9C362087BFA89B5AC6820 /* UIImagePickerController+RACSignalSupport.m */; };
+		CD47EE9AB9B99EB0E95D2CB9 /* RACDynamicSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A49942F03D50073812D151 /* RACDynamicSequence.h */; };
+		CE0183C0389348165385DA77 /* UISlider+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5BF6C105A8428FAB865536 /* UISlider+RACSignalSupport.m */; };
+		CF39FE0FA42CD52E23EE564B /* RACImmediateScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EDFA33092AFEC214B86641 /* RACImmediateScheduler.h */; };
+		D079DC87A26C92F2A1D64C31 /* RACEXTRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C63879A805F87F2985A647E /* RACEXTRuntimeExtensions.h */; };
+		D1162DE390035647F1BA0577 /* RACSerialDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = C4B54706E05961AD895AE764 /* RACSerialDisposable.h */; };
+		D13EE0AF2F7CA0B1FA380219 /* RACScopedDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B128082AD3C66FD58B6336 /* RACScopedDisposable.m */; };
+		D1442648B7C5BA397D9E696E /* RACBehaviorSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D848BD2B86977F8828C4C4 /* RACBehaviorSubject.m */; };
+		D1882534FFBA431BBD84214A /* NSString+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B30049D6B1BD60296E8B2B30 /* NSString+RACSequenceAdditions.m */; };
+		D2EF1CFFCD62B905D4834362 /* RACStringSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 791EEEA2EC9A9C06AD3FF13A /* RACStringSequence.m */; };
+		D3C99DDAC52B9CC5D9D6862A /* RACEmptySignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 34AFE098B83DFFCB541048D9 /* RACEmptySignal.h */; };
+		D4E865D6277353BC83AF2529 /* RACSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = C55F00E393ECCC989CD88EE8 /* RACSubject.m */; };
+		D4EA226540A391A3BE295C45 /* UIControl+RACSignalSupportPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8471E67A77A27F84C33303F /* UIControl+RACSignalSupportPrivate.m */; };
+		D5D562456E09E60D1CB410DB /* RACIndexSetSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBA7C691630971B39A85D51 /* RACIndexSetSequence.h */; };
+		D6EED6DA7CEABC3190A2D461 /* RACStringSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 73EDBA0E1E02756C083EFE47 /* RACStringSequence.h */; };
+		D6F1A2FB0D1A7B5EBAD330CE /* RACTupleSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CE597566F1D211E091EE4C /* RACTupleSequence.h */; };
+		D873EA55319843B6BCAEB162 /* NSNotificationCenter+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EF5889063359BEB3A86F9E7 /* NSNotificationCenter+RACSupport.h */; };
+		D8B0F2A02190A7843338761F /* RACSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 049E87261C212A5485EB1DE4 /* RACSignal.m */; };
+		D8EE357F51EE385316F5CED0 /* NSObject+RACLifting.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A6F2648D7948EFEFA4B271 /* NSObject+RACLifting.h */; };
+		D92DC7119F9B3146FED93B18 /* RACTestScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2DA92D0D93886C13C9BBD /* RACTestScheduler.m */; };
+		D9AFBAEADB76F3A1EF7F88A2 /* RACSubscriptionScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 285EBED9E9BF5937AA553DB8 /* RACSubscriptionScheduler.h */; };
+		E055D6121841DD5A1D663C1B /* RACObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A59EFFE4AD8C03E4462AED /* RACObjCRuntime.h */; };
+		E53ED294ACEAFD541F2B58E0 /* RACArraySequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA62D8A8857241CB6FB9C6 /* RACArraySequence.m */; };
+		E60AABBFBD630547B0FCA4FF /* NSData+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5463F37032B9C59CAC48B15F /* NSData+RACSupport.m */; };
+		E6119548C2BF1713F7A63C21 /* NSNotificationCenter+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26EF998AFFE46E7766D957 /* NSNotificationCenter+RACSupport.m */; };
+		E6D3D49FFBF3AA05820AD57A /* RACSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C94C799284F39880F571338 /* RACSubscriber.h */; };
+		EA147F306DFD2148BFECAE4E /* RACDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 815C8FF46D80AB709C6E129B /* RACDelegateProxy.h */; };
+		EA2767A24A0FDF6B932EDCDA /* RACMulticastConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = F508522122E339F5AE882B7E /* RACMulticastConnection.h */; };
+		EAD8D35AF60489040C13BF31 /* UIDatePicker+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B80A97CF16173AD3440B74 /* UIDatePicker+RACSignalSupport.h */; };
+		EBFCE0872A4BF272845BC14C /* RACKVOChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C14D707BF915104BEDE8B6 /* RACKVOChannel.m */; };
+		EC0EFB5AE990E05E7923831F /* RACKVOTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 054CC3176D0B2CF179E63B31 /* RACKVOTrampoline.m */; };
+		ECA5F93EF17B34968755C500 /* RACEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FA34773EA0532B4BA52E6D /* RACEXTRuntimeExtensions.m */; };
+		ED95DBE982FA022181FFFFA0 /* NSObject+RACDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D1FB84005EC1E7C346D5DF /* NSObject+RACDeallocating.m */; };
+		EE71C126B9436DE5B64EE639 /* RACSubscriptionScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E547A3824546A1AF3E1A8 /* RACSubscriptionScheduler.m */; };
+		EF90A5317BEDA3AF6C98F704 /* NSObject+RACDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = D66D864901F6570422E1F85B /* NSObject+RACDescription.m */; };
+		F2BA23FBBD6C8A3354BC6922 /* RACSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E1181CFEDF16C9869628B2 /* RACSequence.m */; };
+		F5E84F2E3C2ADAA15FBB5279 /* RACUnarySequence.h in Headers */ = {isa = PBXBuildFile; fileRef = D12FF9E20FBEB23C7215900C /* RACUnarySequence.h */; };
+		F8B4C9ACE9039BB024E68EE0 /* RACCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = F62F1452444483F0D0036478 /* RACCommand.m */; };
+		F9301594E47BCC3BA10A524A /* NSString+RACKeyPathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F204375A5385ECC85988C163 /* NSString+RACKeyPathUtilities.m */; };
+		FA82AFF9680A8BAC5A889E65 /* UIStepper+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0370DE60720046E6156A2A /* UIStepper+RACSignalSupport.m */; };
+		FD60C2467A7E79867C2071BE /* Pods-ComicSearch-ReactiveCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E44234C5A1BC234AA253CFD8 /* Pods-ComicSearch-ReactiveCocoa-dummy.m */; };
+		FF720047D2E8F0F698A762BE /* RACEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB222B18EF38861A20D223E /* RACEvent.m */; };
+		FFF55544E5408284C6997BCA /* MKAnnotationView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = C3AC35D37FEEE38A71239921 /* MKAnnotationView+RACSignalSupport.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F8072F5AA47F47B01D013C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1177E4A16C8B77DB5BD0FF51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F4D0485E7117FA3D5F5999;
+			remoteInfo = "Pods-ComicSearch-ReactiveCocoa";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013715FB0AF1EEA8CB58BE51 /* UIImagePickerController+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImagePickerController+RACSignalSupport.h"; path = "ReactiveCocoa/UIImagePickerController+RACSignalSupport.h"; sourceTree = "<group>"; };
+		026B1FDEFF6F8B6EAE502388 /* RACReturnSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACReturnSignal.h; path = ReactiveCocoa/RACReturnSignal.h; sourceTree = "<group>"; };
+		049E87261C212A5485EB1DE4 /* RACSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignal.m; path = ReactiveCocoa/RACSignal.m; sourceTree = "<group>"; };
+		054CC3176D0B2CF179E63B31 /* RACKVOTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOTrampoline.m; path = ReactiveCocoa/RACKVOTrampoline.m; sourceTree = "<group>"; };
+		09761B9818B1D9042B6724C5 /* NSString+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSString+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		0E24F6135D78C4F951645839 /* RACUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnit.h; path = ReactiveCocoa/RACUnit.h; sourceTree = "<group>"; };
+		0E55712615DB7E168A047030 /* UITableViewHeaderFooterView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewHeaderFooterView+RACSignalSupport.m"; path = "ReactiveCocoa/UITableViewHeaderFooterView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		0F4E547A3824546A1AF3E1A8 /* RACSubscriptionScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriptionScheduler.m; path = ReactiveCocoa/RACSubscriptionScheduler.m; sourceTree = "<group>"; };
+		0F87A34445D35EE40B0917BE /* NSObject+RACDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDescription.h"; path = "ReactiveCocoa/NSObject+RACDescription.h"; sourceTree = "<group>"; };
+		10F47097395C291E82661D5D /* UIStepper+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStepper+RACSignalSupport.h"; path = "ReactiveCocoa/UIStepper+RACSignalSupport.h"; sourceTree = "<group>"; };
+		11117BD090A4F4F7419B3868 /* RACDynamicSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSequence.m; path = ReactiveCocoa/RACDynamicSequence.m; sourceTree = "<group>"; };
+		151C3D3E44FA0197C96C4F6E /* RACArraySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACArraySequence.h; path = ReactiveCocoa/RACArraySequence.h; sourceTree = "<group>"; };
+		15B80A97CF16173AD3440B74 /* UIDatePicker+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDatePicker+RACSignalSupport.h"; path = "ReactiveCocoa/UIDatePicker+RACSignalSupport.h"; sourceTree = "<group>"; };
+		170072051085D97D9A4F2726 /* RACScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACScheduler.h; path = ReactiveCocoa/RACScheduler.h; sourceTree = "<group>"; };
+		1743E130E1DF6C7A394686F3 /* Pods-ComicSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ComicSearch.release.xcconfig"; sourceTree = "<group>"; };
+		1BAAB8C485D1F3ADE19E312A /* RACEmptySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySequence.m; path = ReactiveCocoa/RACEmptySequence.m; sourceTree = "<group>"; };
+		1BD6318C582F38E8424EF9B9 /* RACMulticastConnection+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACMulticastConnection+Private.h"; path = "ReactiveCocoa/RACMulticastConnection+Private.h"; sourceTree = "<group>"; };
+		1C94C799284F39880F571338 /* RACSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriber.h; path = ReactiveCocoa/RACSubscriber.h; sourceTree = "<group>"; };
+		20A6F2648D7948EFEFA4B271 /* NSObject+RACLifting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACLifting.h"; path = "ReactiveCocoa/NSObject+RACLifting.h"; sourceTree = "<group>"; };
+		2123DF34E11E0D64C6DA0D97 /* UIBarButtonItem+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+RACCommandSupport.m"; path = "ReactiveCocoa/UIBarButtonItem+RACCommandSupport.m"; sourceTree = "<group>"; };
+		2212F2685CFF5A2CD1A762B1 /* RACGroupedSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACGroupedSignal.h; path = ReactiveCocoa/RACGroupedSignal.h; sourceTree = "<group>"; };
+		23E2B76B2739E2AAF86743D1 /* Pods-ComicSearch-ReactiveCocoa-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ComicSearch-ReactiveCocoa-Private.xcconfig"; sourceTree = "<group>"; };
+		23F832DB8E5A229A3E6BDAB9 /* RACCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCommand.h; path = ReactiveCocoa/RACCommand.h; sourceTree = "<group>"; };
+		285EBED9E9BF5937AA553DB8 /* RACSubscriptionScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptionScheduler.h; path = ReactiveCocoa/RACSubscriptionScheduler.h; sourceTree = "<group>"; };
+		2B350CEDFCC867B9F5BC2049 /* NSObject+RACKVOWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACKVOWrapper.m"; path = "ReactiveCocoa/NSObject+RACKVOWrapper.m"; sourceTree = "<group>"; };
+		2C4A19D84E3E72F83F088551 /* RACEmptySignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySignal.m; path = ReactiveCocoa/RACEmptySignal.m; sourceTree = "<group>"; };
+		2D1F639886AD3B98594B7693 /* RACReplaySubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReplaySubject.m; path = ReactiveCocoa/RACReplaySubject.m; sourceTree = "<group>"; };
+		2DEBCBFCBE19773D2F6D9081 /* NSEnumerator+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEnumerator+RACSequenceAdditions.m"; path = "ReactiveCocoa/NSEnumerator+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		2E4DEDCDC5BFFD6CB52DF892 /* RACEagerSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEagerSequence.h; path = ReactiveCocoa/RACEagerSequence.h; sourceTree = "<group>"; };
+		2F82A3FA63389C283BD2E715 /* RACEXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTKeyPathCoding.h; path = ReactiveCocoa/extobjc/RACEXTKeyPathCoding.h; sourceTree = "<group>"; };
+		30EA2A7A2847F5264090807D /* NSEnumerator+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEnumerator+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSEnumerator+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		313874DDCF581259DDF01256 /* NSFileHandle+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSFileHandle+RACSupport.h"; path = "ReactiveCocoa/NSFileHandle+RACSupport.h"; sourceTree = "<group>"; };
+		31A84D933E759460076FED10 /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveCocoa/NSArray+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		33D142F866B21444EA3BA422 /* RACErrorSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACErrorSignal.m; path = ReactiveCocoa/RACErrorSignal.m; sourceTree = "<group>"; };
+		34AFE098B83DFFCB541048D9 /* RACEmptySignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySignal.h; path = ReactiveCocoa/RACEmptySignal.h; sourceTree = "<group>"; };
+		35D1FB84005EC1E7C346D5DF /* NSObject+RACDeallocating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDeallocating.m"; path = "ReactiveCocoa/NSObject+RACDeallocating.m"; sourceTree = "<group>"; };
+		3F684D79D88262D37508058A /* UICollectionReusableView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionReusableView+RACSignalSupport.m"; path = "ReactiveCocoa/UICollectionReusableView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		411E43478CDC8B865F3B0584 /* RACSubscriptingAssignmentTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriptingAssignmentTrampoline.m; path = ReactiveCocoa/RACSubscriptingAssignmentTrampoline.m; sourceTree = "<group>"; };
+		4258372AE4FBD18748A4D27D /* Pods-ComicSearch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ComicSearch-acknowledgements.plist"; sourceTree = "<group>"; };
+		4306887990F214A01D157E90 /* RACDynamicSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSignal.m; path = ReactiveCocoa/RACDynamicSignal.m; sourceTree = "<group>"; };
+		4354B849CA24E15A36595A17 /* RACValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACValueTransformer.h; path = ReactiveCocoa/RACValueTransformer.h; sourceTree = "<group>"; };
+		4365562B2B4B545E266CBA03 /* NSObject+RACDeallocating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDeallocating.h"; path = "ReactiveCocoa/NSObject+RACDeallocating.h"; sourceTree = "<group>"; };
+		4544D4127D83B274A4B5ED1E /* UIRefreshControl+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+RACCommandSupport.h"; path = "ReactiveCocoa/UIRefreshControl+RACCommandSupport.h"; sourceTree = "<group>"; };
+		455B0B43E27BCAD184F86EA9 /* RACTargetQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTargetQueueScheduler.h; path = ReactiveCocoa/RACTargetQueueScheduler.h; sourceTree = "<group>"; };
+		45C1709AC43953347A0B089D /* UITableViewHeaderFooterView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewHeaderFooterView+RACSignalSupport.h"; path = "ReactiveCocoa/UITableViewHeaderFooterView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		48655644AB72E821D6F6649B /* RACEmptySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySequence.h; path = ReactiveCocoa/RACEmptySequence.h; sourceTree = "<group>"; };
+		4AAC9650EF77418E2E730E6F /* UIDatePicker+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDatePicker+RACSignalSupport.m"; path = "ReactiveCocoa/UIDatePicker+RACSignalSupport.m"; sourceTree = "<group>"; };
+		4BB817C714C574976E35A43C /* RACScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScheduler.m; path = ReactiveCocoa/RACScheduler.m; sourceTree = "<group>"; };
+		4C14EAE7B02F2B0F819076E1 /* UIAlertView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+RACSignalSupport.m"; path = "ReactiveCocoa/UIAlertView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		4C5BF6C105A8428FAB865536 /* UISlider+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISlider+RACSignalSupport.m"; path = "ReactiveCocoa/UISlider+RACSignalSupport.m"; sourceTree = "<group>"; };
+		4DBA7C691630971B39A85D51 /* RACIndexSetSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACIndexSetSequence.h; path = ReactiveCocoa/RACIndexSetSequence.h; sourceTree = "<group>"; };
+		4DEAF5A5587A14FCF2EAACD1 /* RACSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignal.h; path = ReactiveCocoa/RACSignal.h; sourceTree = "<group>"; };
+		4E0A61E544B97E7A0F07EECD /* UISlider+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+RACSignalSupport.h"; path = "ReactiveCocoa/UISlider+RACSignalSupport.h"; sourceTree = "<group>"; };
+		500060CC42FE8BD27F531CD6 /* UIRefreshControl+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+RACCommandSupport.m"; path = "ReactiveCocoa/UIRefreshControl+RACCommandSupport.m"; sourceTree = "<group>"; };
+		52934EDE8A53E9F45145D5F8 /* UITextField+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+RACSignalSupport.m"; path = "ReactiveCocoa/UITextField+RACSignalSupport.m"; sourceTree = "<group>"; };
+		52DAB3026C2374A894A30F22 /* RACmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACmetamacros.h; path = ReactiveCocoa/extobjc/RACmetamacros.h; sourceTree = "<group>"; };
+		53DB904699510EC153DE3AE1 /* UITableViewCell+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+RACSignalSupport.m"; path = "ReactiveCocoa/UITableViewCell+RACSignalSupport.m"; sourceTree = "<group>"; };
+		5463F37032B9C59CAC48B15F /* NSData+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+RACSupport.m"; path = "ReactiveCocoa/NSData+RACSupport.m"; sourceTree = "<group>"; };
+		54A59EFFE4AD8C03E4462AED /* RACObjCRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACObjCRuntime.h; path = ReactiveCocoa/RACObjCRuntime.h; sourceTree = "<group>"; };
+		54FEFDA5F5BA63203C5E0980 /* RACTupleSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTupleSequence.m; path = ReactiveCocoa/RACTupleSequence.m; sourceTree = "<group>"; };
+		556452DADECEB669C62ADDA2 /* RACDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDisposable.h; path = ReactiveCocoa/RACDisposable.h; sourceTree = "<group>"; };
+		57F5B5C5C0170F568D40ADF1 /* RACValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACValueTransformer.m; path = ReactiveCocoa/RACValueTransformer.m; sourceTree = "<group>"; };
+		586A6D1E33F7CD3244A21429 /* RACTargetQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTargetQueueScheduler.m; path = ReactiveCocoa/RACTargetQueueScheduler.m; sourceTree = "<group>"; };
+		58B4D07D5F804A57379FD4F7 /* RACKVOChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOChannel.h; path = ReactiveCocoa/RACKVOChannel.h; sourceTree = "<group>"; };
+		58E33C47C7ADD94F45B731F3 /* RACEXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTScope.h; path = ReactiveCocoa/extobjc/RACEXTScope.h; sourceTree = "<group>"; };
+		5A0370DE60720046E6156A2A /* UIStepper+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStepper+RACSignalSupport.m"; path = "ReactiveCocoa/UIStepper+RACSignalSupport.m"; sourceTree = "<group>"; };
+		5B2245EE1217E9CCE9F859E3 /* libPods-ComicSearch-ReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicSearch-ReactiveCocoa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B78E8B0DE59861E2E5BAE94 /* UITableViewCell+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+RACSignalSupport.h"; path = "ReactiveCocoa/UITableViewCell+RACSignalSupport.h"; sourceTree = "<group>"; };
+		5C1E514E7C340EACB4B898CC /* UIButton+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RACCommandSupport.m"; path = "ReactiveCocoa/UIButton+RACCommandSupport.m"; sourceTree = "<group>"; };
+		5D524B127E42CA0BB9E8B47D /* NSData+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+RACSupport.h"; path = "ReactiveCocoa/NSData+RACSupport.h"; sourceTree = "<group>"; };
+		5DF2DA92D0D93886C13C9BBD /* RACTestScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTestScheduler.m; path = ReactiveCocoa/RACTestScheduler.m; sourceTree = "<group>"; };
+		61F1E4CE904897D0F39F40FD /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACSignalProvider.d; path = ReactiveCocoa/RACSignalProvider.d; sourceTree = "<group>"; };
+		67F42C519ECFBB20B0F9E68F /* RACKVOProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOProxy.h; path = ReactiveCocoa/RACKVOProxy.h; sourceTree = "<group>"; };
+		682755F875CE6B5C97131C7D /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6A7C363F983264F8650695DC /* Pods-ComicSearch-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ComicSearch-environment.h"; sourceTree = "<group>"; };
+		6AA33DFCC494D76E5AD1659F /* RACSignal+Operations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RACSignal+Operations.m"; path = "ReactiveCocoa/RACSignal+Operations.m"; sourceTree = "<group>"; };
+		6C63879A805F87F2985A647E /* RACEXTRuntimeExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTRuntimeExtensions.h; path = ReactiveCocoa/extobjc/RACEXTRuntimeExtensions.h; sourceTree = "<group>"; };
+		6CA610CDB2BF560A653A9413 /* UICollectionReusableView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionReusableView+RACSignalSupport.h"; path = "ReactiveCocoa/UICollectionReusableView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		6CB222B18EF38861A20D223E /* RACEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEvent.m; path = ReactiveCocoa/RACEvent.m; sourceTree = "<group>"; };
+		6DACC44942817FC21B974590 /* RACStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACStream.h; path = ReactiveCocoa/RACStream.h; sourceTree = "<group>"; };
+		6E27D377DA87F079859A3B90 /* UISegmentedControl+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISegmentedControl+RACSignalSupport.m"; path = "ReactiveCocoa/UISegmentedControl+RACSignalSupport.m"; sourceTree = "<group>"; };
+		6EF5889063359BEB3A86F9E7 /* NSNotificationCenter+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+RACSupport.h"; path = "ReactiveCocoa/NSNotificationCenter+RACSupport.h"; sourceTree = "<group>"; };
+		6F8F174132CFA84AFF957F86 /* RACStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStream.m; path = ReactiveCocoa/RACStream.m; sourceTree = "<group>"; };
+		6FD2D1267013B131324A4D17 /* UIButton+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RACCommandSupport.h"; path = "ReactiveCocoa/UIButton+RACCommandSupport.h"; sourceTree = "<group>"; };
+		7175960BE19A7411AF03CCE1 /* RACObjCRuntime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACObjCRuntime.m; path = ReactiveCocoa/RACObjCRuntime.m; sourceTree = "<group>"; };
+		71C96BBD8E227EC026B7F8C4 /* RACSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSequence.h; path = ReactiveCocoa/RACSequence.h; sourceTree = "<group>"; };
+		71FA34773EA0532B4BA52E6D /* RACEXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEXTRuntimeExtensions.m; path = ReactiveCocoa/extobjc/RACEXTRuntimeExtensions.m; sourceTree = "<group>"; };
+		723514667358EBC545ED4FC6 /* libPods-ComicSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		724A7575CF174FBE606BDDAA /* RACDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDisposable.m; path = ReactiveCocoa/RACDisposable.m; sourceTree = "<group>"; };
+		73EDBA0E1E02756C083EFE47 /* RACStringSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACStringSequence.h; path = ReactiveCocoa/RACStringSequence.h; sourceTree = "<group>"; };
+		74EDFA33092AFEC214B86641 /* RACImmediateScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACImmediateScheduler.h; path = ReactiveCocoa/RACImmediateScheduler.h; sourceTree = "<group>"; };
+		774D5C2628326100F0BDF5E0 /* RACSignalSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignalSequence.h; path = ReactiveCocoa/RACSignalSequence.h; sourceTree = "<group>"; };
+		78AC5F678953A2E310D657FE /* RACTestScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTestScheduler.h; path = ReactiveCocoa/RACTestScheduler.h; sourceTree = "<group>"; };
+		791EEEA2EC9A9C06AD3FF13A /* RACStringSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStringSequence.m; path = ReactiveCocoa/RACStringSequence.m; sourceTree = "<group>"; };
+		798D8A58904092062BD35215 /* RACCompoundDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACCompoundDisposable.h; path = ReactiveCocoa/RACCompoundDisposable.h; sourceTree = "<group>"; };
+		7A2D64BAD1E5D73D7F3ECCD3 /* Pods-ComicSearch-ReactiveCocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ComicSearch-ReactiveCocoa.xcconfig"; sourceTree = "<group>"; };
+		7C7610E092C60ED3C4EB70D6 /* Pods-ComicSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ComicSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		7EA0D3A9BF246B8BCD8C620A /* RACImmediateScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACImmediateScheduler.m; path = ReactiveCocoa/RACImmediateScheduler.m; sourceTree = "<group>"; };
+		7F955D6A39809AA4C51F4F3C /* RACSubscriptingAssignmentTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptingAssignmentTrampoline.h; path = ReactiveCocoa/RACSubscriptingAssignmentTrampoline.h; sourceTree = "<group>"; };
+		80151C1160DC0E2C44E7E450 /* NSObject+RACSelectorSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACSelectorSignal.h"; path = "ReactiveCocoa/NSObject+RACSelectorSignal.h"; sourceTree = "<group>"; };
+		80AC406BC772522E2A6D03EC /* UIBarButtonItem+RACCommandSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+RACCommandSupport.h"; path = "ReactiveCocoa/UIBarButtonItem+RACCommandSupport.h"; sourceTree = "<group>"; };
+		80CD8A0048A3B6E9E8FC3697 /* MKAnnotationView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+RACSignalSupport.m"; path = "ReactiveCocoa/MKAnnotationView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		815C8FF46D80AB709C6E129B /* RACDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDelegateProxy.h; path = ReactiveCocoa/RACDelegateProxy.h; sourceTree = "<group>"; };
+		817696765C0AC0CBCA775A65 /* RACBehaviorSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBehaviorSubject.h; path = ReactiveCocoa/RACBehaviorSubject.h; sourceTree = "<group>"; };
+		83E544F22410EBAEC27E75EA /* RACSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubject.h; path = ReactiveCocoa/RACSubject.h; sourceTree = "<group>"; };
+		846297E0D9C7A94646F0583E /* NSUserDefaults+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+RACSupport.m"; path = "ReactiveCocoa/NSUserDefaults+RACSupport.m"; sourceTree = "<group>"; };
+		846A7614202F4662CC92F2C6 /* UISegmentedControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+RACSignalSupport.h"; path = "ReactiveCocoa/UISegmentedControl+RACSignalSupport.h"; sourceTree = "<group>"; };
+		849AC5BA78FC7B789CECA495 /* UIControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupport.h"; path = "ReactiveCocoa/UIControl+RACSignalSupport.h"; sourceTree = "<group>"; };
+		85004AB4A6D9A3DD74530EE7 /* RACBlockTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACBlockTrampoline.h; path = ReactiveCocoa/RACBlockTrampoline.h; sourceTree = "<group>"; };
+		8551DDCD116473878F2D08DA /* RACUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACUnit.m; path = ReactiveCocoa/RACUnit.m; sourceTree = "<group>"; };
+		858EA2CF0CFC902FC9B82A55 /* RACKVOTrampoline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACKVOTrampoline.h; path = ReactiveCocoa/RACKVOTrampoline.h; sourceTree = "<group>"; };
+		85E0A25A881AC68C67C0F262 /* NSObject+RACSelectorSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACSelectorSignal.m"; path = "ReactiveCocoa/NSObject+RACSelectorSignal.m"; sourceTree = "<group>"; };
+		8754FA5B2A3571489EA5130C /* Pods-ComicSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ComicSearch-dummy.m"; sourceTree = "<group>"; };
+		87C380D0E6943139E5F6D58E /* UIActionSheet+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+RACSignalSupport.h"; path = "ReactiveCocoa/UIActionSheet+RACSignalSupport.h"; sourceTree = "<group>"; };
+		8A806B3C99422541799292D6 /* NSURLConnection+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+RACSupport.h"; path = "ReactiveCocoa/NSURLConnection+RACSupport.h"; sourceTree = "<group>"; };
+		8C636F67FF5D525BF4B7B58E /* RACStream+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACStream+Private.h"; path = "ReactiveCocoa/RACStream+Private.h"; sourceTree = "<group>"; };
+		8D38562E30D7C235F6BFA537 /* RACPassthroughSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACPassthroughSubscriber.m; path = ReactiveCocoa/RACPassthroughSubscriber.m; sourceTree = "<group>"; };
+		8DEC0521C6C4920DC334A684 /* RACDynamicSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDynamicSignal.h; path = ReactiveCocoa/RACDynamicSignal.h; sourceTree = "<group>"; };
+		8EFBB98FFC4800B2DCA6AE37 /* UISwitch+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISwitch+RACSignalSupport.h"; path = "ReactiveCocoa/UISwitch+RACSignalSupport.h"; sourceTree = "<group>"; };
+		9088BD564DD51D2A0DEBAC6B /* NSDictionary+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+RACSequenceAdditions.m"; path = "ReactiveCocoa/NSDictionary+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		90A2F7F564969CCCB0083788 /* NSSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		91503BC14B0E5E3D250F2927 /* NSIndexSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSIndexSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		93215A8140DA4FE75B03262D /* NSString+RACKeyPathUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACKeyPathUtilities.h"; path = "ReactiveCocoa/NSString+RACKeyPathUtilities.h"; sourceTree = "<group>"; };
+		99C14D707BF915104BEDE8B6 /* RACKVOChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOChannel.m; path = ReactiveCocoa/RACKVOChannel.m; sourceTree = "<group>"; };
+		9AFA62D8A8857241CB6FB9C6 /* RACArraySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACArraySequence.m; path = ReactiveCocoa/RACArraySequence.m; sourceTree = "<group>"; };
+		9BF0A17986DF759A86AE65B1 /* NSURLConnection+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+RACSupport.m"; path = "ReactiveCocoa/NSURLConnection+RACSupport.m"; sourceTree = "<group>"; };
+		9C9759F6468AF0EE6B7197CD /* UIControl+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+RACSignalSupport.m"; path = "ReactiveCocoa/UIControl+RACSignalSupport.m"; sourceTree = "<group>"; };
+		A0CB851A4C2CF7E22EFBF1E6 /* RACReturnSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACReturnSignal.m; path = ReactiveCocoa/RACReturnSignal.m; sourceTree = "<group>"; };
+		A122876DB7196DB266ECEAE5 /* RACSerialDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSerialDisposable.m; path = ReactiveCocoa/RACSerialDisposable.m; sourceTree = "<group>"; };
+		A1A628A2FEACC9356FB45D7F /* RACScheduler+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Subclass.h"; path = "ReactiveCocoa/RACScheduler+Subclass.h"; sourceTree = "<group>"; };
+		A54F458A8711CC2D6652D574 /* RACTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTuple.h; path = ReactiveCocoa/RACTuple.h; sourceTree = "<group>"; };
+		A7E1181CFEDF16C9869628B2 /* RACSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSequence.m; path = ReactiveCocoa/RACSequence.m; sourceTree = "<group>"; };
+		A7E594745D491DDAFEB7865C /* RACDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDelegateProxy.m; path = ReactiveCocoa/RACDelegateProxy.m; sourceTree = "<group>"; };
+		A8A49942F03D50073812D151 /* RACDynamicSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDynamicSequence.h; path = ReactiveCocoa/RACDynamicSequence.h; sourceTree = "<group>"; };
+		ADB472A4B63C345B5360FB02 /* RACChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACChannel.h; path = ReactiveCocoa/RACChannel.h; sourceTree = "<group>"; };
+		AE26EF998AFFE46E7766D957 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveCocoa/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
+		AEF1E9BF4D7A323F427954AF /* NSArray+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSArray+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		B28D927B5C22485FC8AC846D /* Pods-ComicSearch-ReactiveCocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ComicSearch-ReactiveCocoa-prefix.pch"; sourceTree = "<group>"; };
+		B30049D6B1BD60296E8B2B30 /* NSString+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSequenceAdditions.m"; path = "ReactiveCocoa/NSString+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		B38D39970EEAABDAC7ECF03F /* RACIndexSetSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACIndexSetSequence.m; path = ReactiveCocoa/RACIndexSetSequence.m; sourceTree = "<group>"; };
+		B40717173A45A92039B788B9 /* NSSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+RACSequenceAdditions.m"; path = "ReactiveCocoa/NSSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		B4232140B302B8775C9B969F /* UIControl+RACSignalSupportPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupportPrivate.h"; path = "ReactiveCocoa/UIControl+RACSignalSupportPrivate.h"; sourceTree = "<group>"; };
+		B6ECC5837873FA5BED139FED /* RACQueueScheduler+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACQueueScheduler+Subclass.h"; path = "ReactiveCocoa/RACQueueScheduler+Subclass.h"; sourceTree = "<group>"; };
+		B6F0CE9A45E164CEB4CCDDF1 /* UIActionSheet+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+RACSignalSupport.m"; path = "ReactiveCocoa/UIActionSheet+RACSignalSupport.m"; sourceTree = "<group>"; };
+		B7CE597566F1D211E091EE4C /* RACTupleSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACTupleSequence.h; path = ReactiveCocoa/RACTupleSequence.h; sourceTree = "<group>"; };
+		B8BFB27048EF90AC067DDE41 /* NSObject+RACLifting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACLifting.m"; path = "ReactiveCocoa/NSObject+RACLifting.m"; sourceTree = "<group>"; };
+		B947AD366F459086732AA1E7 /* UIGestureRecognizer+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+RACSignalSupport.h"; path = "ReactiveCocoa/UIGestureRecognizer+RACSignalSupport.h"; sourceTree = "<group>"; };
+		B9C9825B374B6C3C9B0F5D09 /* RACSignalSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignalSequence.m; path = ReactiveCocoa/RACSignalSequence.m; sourceTree = "<group>"; };
+		B9D7BD91CC38617628687B74 /* RACSubscriber+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSubscriber+Private.h"; path = "ReactiveCocoa/RACSubscriber+Private.h"; sourceTree = "<group>"; };
+		BA623C4934E78B864944ED06 /* NSIndexSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSIndexSet+RACSequenceAdditions.m"; path = "ReactiveCocoa/NSIndexSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		BC34B7D690AF3A5CC6DD7A55 /* RACScheduler+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACScheduler+Private.h"; path = "ReactiveCocoa/RACScheduler+Private.h"; sourceTree = "<group>"; };
+		BDA81E09C931638C0EA8CDBB /* UITextView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+RACSignalSupport.h"; path = "ReactiveCocoa/UITextView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		BDFF19A57316F70DDE2F793F /* RACMulticastConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACMulticastConnection.m; path = ReactiveCocoa/RACMulticastConnection.m; sourceTree = "<group>"; };
+		BF93116DE3622D8901ECD8D6 /* UIGestureRecognizer+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+RACSignalSupport.m"; path = "ReactiveCocoa/UIGestureRecognizer+RACSignalSupport.m"; sourceTree = "<group>"; };
+		C0DE1C154228EBA436EB860A /* RACKVOProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOProxy.m; path = ReactiveCocoa/RACKVOProxy.m; sourceTree = "<group>"; };
+		C12A3F6D3D54A3D3B6D0FCC3 /* NSString+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSupport.h"; path = "ReactiveCocoa/NSString+RACSupport.h"; sourceTree = "<group>"; };
+		C1458243ECE79FD8530D5C70 /* RACQueueScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACQueueScheduler.m; path = ReactiveCocoa/RACQueueScheduler.m; sourceTree = "<group>"; };
+		C1D848BD2B86977F8828C4C4 /* RACBehaviorSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBehaviorSubject.m; path = ReactiveCocoa/RACBehaviorSubject.m; sourceTree = "<group>"; };
+		C3AC35D37FEEE38A71239921 /* MKAnnotationView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+RACSignalSupport.h"; path = "ReactiveCocoa/MKAnnotationView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		C48A86F49CCD99C62420168D /* RACCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCompoundDisposable.m; path = ReactiveCocoa/RACCompoundDisposable.m; sourceTree = "<group>"; };
+		C4B54706E05961AD895AE764 /* RACSerialDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSerialDisposable.h; path = ReactiveCocoa/RACSerialDisposable.h; sourceTree = "<group>"; };
+		C5022BDA72C3E29A6FC1DC79 /* UIAlertView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+RACSignalSupport.h"; path = "ReactiveCocoa/UIAlertView+RACSignalSupport.h"; sourceTree = "<group>"; };
+		C55F00E393ECCC989CD88EE8 /* RACSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubject.m; path = ReactiveCocoa/RACSubject.m; sourceTree = "<group>"; };
+		C659594A144F3853CFF29E52 /* RACTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTuple.m; path = ReactiveCocoa/RACTuple.m; sourceTree = "<group>"; };
+		C7BB16B7DF689030D1EE74C4 /* NSObject+RACKVOWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACKVOWrapper.h"; path = "ReactiveCocoa/NSObject+RACKVOWrapper.h"; sourceTree = "<group>"; };
+		C7F47CEE101AECDBB92DB8CD /* RACChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACChannel.m; path = ReactiveCocoa/RACChannel.m; sourceTree = "<group>"; };
+		C8471E67A77A27F84C33303F /* UIControl+RACSignalSupportPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+RACSignalSupportPrivate.m"; path = "ReactiveCocoa/UIControl+RACSignalSupportPrivate.m"; sourceTree = "<group>"; };
+		C90C621AB76381337F63A1C5 /* RACBlockTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACBlockTrampoline.m; path = ReactiveCocoa/RACBlockTrampoline.m; sourceTree = "<group>"; };
+		CA07EB1DC50E904FB1E49913 /* RACEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEvent.h; path = ReactiveCocoa/RACEvent.h; sourceTree = "<group>"; };
+		CBB9C362087BFA89B5AC6820 /* UIImagePickerController+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+RACSignalSupport.m"; path = "ReactiveCocoa/UIImagePickerController+RACSignalSupport.m"; sourceTree = "<group>"; };
+		CBD01E057B837FACFBD6D281 /* NSDictionary+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSDictionary+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		D05449AB36C5046AD54B966D /* NSOrderedSet+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+RACSequenceAdditions.h"; path = "ReactiveCocoa/NSOrderedSet+RACSequenceAdditions.h"; sourceTree = "<group>"; };
+		D12FF9E20FBEB23C7215900C /* RACUnarySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnarySequence.h; path = ReactiveCocoa/RACUnarySequence.h; sourceTree = "<group>"; };
+		D44940438635E184CB1F9BD5 /* UISwitch+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISwitch+RACSignalSupport.m"; path = "ReactiveCocoa/UISwitch+RACSignalSupport.m"; sourceTree = "<group>"; };
+		D4D2F031ABAE5BBE247B8988 /* ReactiveCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactiveCocoa.h; path = ReactiveCocoa/ReactiveCocoa.h; sourceTree = "<group>"; };
+		D4DBB87F977EDA8C45932F5F /* NSOrderedSet+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSOrderedSet+RACSequenceAdditions.m"; path = "ReactiveCocoa/NSOrderedSet+RACSequenceAdditions.m"; sourceTree = "<group>"; };
+		D5C83B10BDF2A14600710260 /* NSObject+RACPropertySubscribing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACPropertySubscribing.h"; path = "ReactiveCocoa/NSObject+RACPropertySubscribing.h"; sourceTree = "<group>"; };
+		D66D864901F6570422E1F85B /* NSObject+RACDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACDescription.m"; path = "ReactiveCocoa/NSObject+RACDescription.m"; sourceTree = "<group>"; };
+		D929CCCD4AC8C24092CFCA31 /* Pods-ComicSearch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ComicSearch-resources.sh"; sourceTree = "<group>"; };
+		D949539607ACB4F2DC02B57B /* RACUnarySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACUnarySequence.m; path = ReactiveCocoa/RACUnarySequence.m; sourceTree = "<group>"; };
+		DA4E60DBA29C1F911D6B9413 /* RACQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACQueueScheduler.h; path = ReactiveCocoa/RACQueueScheduler.h; sourceTree = "<group>"; };
+		DB8A198C253A8D694DCDD608 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC75AE1E340FAAFF596F8955 /* NSString+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSupport.m"; path = "ReactiveCocoa/NSString+RACSupport.m"; sourceTree = "<group>"; };
+		E365E8B46777E5AD725CFF83 /* RACSignal+Operations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACSignal+Operations.h"; path = "ReactiveCocoa/RACSignal+Operations.h"; sourceTree = "<group>"; };
+		E44234C5A1BC234AA253CFD8 /* Pods-ComicSearch-ReactiveCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ComicSearch-ReactiveCocoa-dummy.m"; sourceTree = "<group>"; };
+		E7605749F9BB30615EFFFAF0 /* RACErrorSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACErrorSignal.h; path = ReactiveCocoa/RACErrorSignal.h; sourceTree = "<group>"; };
+		E7B2AEB1E88671521284BF4E /* RACEagerSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEagerSequence.m; path = ReactiveCocoa/RACEagerSequence.m; sourceTree = "<group>"; };
+		E99C0C7B6C67B87FE77CA78C /* RACGroupedSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACGroupedSignal.m; path = ReactiveCocoa/RACGroupedSignal.m; sourceTree = "<group>"; };
+		EA5883238BFFA1ACBEFF8561 /* NSFileHandle+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RACSupport.m"; path = "ReactiveCocoa/NSFileHandle+RACSupport.m"; sourceTree = "<group>"; };
+		EFC81DF5D3B25425C3225464 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+RACSignalSupport.m"; path = "ReactiveCocoa/UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		F036B469A1692B933114704C /* RACSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriber.m; path = ReactiveCocoa/RACSubscriber.m; sourceTree = "<group>"; };
+		F1A6C10D516DF1A105D5314B /* RACScopedDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACScopedDisposable.h; path = ReactiveCocoa/RACScopedDisposable.h; sourceTree = "<group>"; };
+		F1B2537B32BB649B8CAEFEE6 /* Pods-ComicSearch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ComicSearch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F204375A5385ECC85988C163 /* NSString+RACKeyPathUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACKeyPathUtilities.m"; path = "ReactiveCocoa/NSString+RACKeyPathUtilities.m"; sourceTree = "<group>"; };
+		F283E07DD99878AC45A58B96 /* NSInvocation+RACTypeParsing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+RACTypeParsing.h"; path = "ReactiveCocoa/NSInvocation+RACTypeParsing.h"; sourceTree = "<group>"; };
+		F3498C2E1AAD4BA81136BDE2 /* RACReplaySubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACReplaySubject.h; path = ReactiveCocoa/RACReplaySubject.h; sourceTree = "<group>"; };
+		F3589F7A1CB509FA44B008AB /* NSUserDefaults+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+RACSupport.h"; path = "ReactiveCocoa/NSUserDefaults+RACSupport.h"; sourceTree = "<group>"; };
+		F3B128082AD3C66FD58B6336 /* RACScopedDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACScopedDisposable.m; path = ReactiveCocoa/RACScopedDisposable.m; sourceTree = "<group>"; };
+		F508522122E339F5AE882B7E /* RACMulticastConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACMulticastConnection.h; path = ReactiveCocoa/RACMulticastConnection.h; sourceTree = "<group>"; };
+		F62F1452444483F0D0036478 /* RACCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACCommand.m; path = ReactiveCocoa/RACCommand.m; sourceTree = "<group>"; };
+		F6C14877CB54BB6A55B0BBD7 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACCompoundDisposableProvider.d; path = ReactiveCocoa/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
+		F72C7738C504FE72D0A3F802 /* NSInvocation+RACTypeParsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+RACTypeParsing.m"; path = "ReactiveCocoa/NSInvocation+RACTypeParsing.m"; sourceTree = "<group>"; };
+		F77B3151312A7075C3E5769B /* RACPassthroughSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACPassthroughSubscriber.h; path = ReactiveCocoa/RACPassthroughSubscriber.h; sourceTree = "<group>"; };
+		FBB85FBCD3D731AC2FF95E4C /* NSObject+RACPropertySubscribing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACPropertySubscribing.m"; path = "ReactiveCocoa/NSObject+RACPropertySubscribing.m"; sourceTree = "<group>"; };
+		FE545BC3390138315218C029 /* UITextField+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+RACSignalSupport.h"; path = "ReactiveCocoa/UITextField+RACSignalSupport.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58ACF3438FC3B4538D9FD1EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68506FA8B3AB73414C1501AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD8F8C3937AD49D45D7BCA94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00526741FFB5AA51C8A8191B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0725F0B76F5934ED03798E04 /* no-arc */ = {
+			isa = PBXGroup;
+			children = (
+				54A59EFFE4AD8C03E4462AED /* RACObjCRuntime.h */,
+				7175960BE19A7411AF03CCE1 /* RACObjCRuntime.m */,
+			);
+			name = "no-arc";
+			sourceTree = "<group>";
+		};
+		138A428F1409269C0A65FFD2 /* Pods-ComicSearch */ = {
+			isa = PBXGroup;
+			children = (
+				F1B2537B32BB649B8CAEFEE6 /* Pods-ComicSearch-acknowledgements.markdown */,
+				4258372AE4FBD18748A4D27D /* Pods-ComicSearch-acknowledgements.plist */,
+				8754FA5B2A3571489EA5130C /* Pods-ComicSearch-dummy.m */,
+				6A7C363F983264F8650695DC /* Pods-ComicSearch-environment.h */,
+				D929CCCD4AC8C24092CFCA31 /* Pods-ComicSearch-resources.sh */,
+				7C7610E092C60ED3C4EB70D6 /* Pods-ComicSearch.debug.xcconfig */,
+				1743E130E1DF6C7A394686F3 /* Pods-ComicSearch.release.xcconfig */,
+			);
+			name = "Pods-ComicSearch";
+			path = "Target Support Files/Pods-ComicSearch";
+			sourceTree = "<group>";
+		};
+		42127771FC68BDFF9CEB9F3E /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				D1CB8B34E86CCBC0D63EC44B /* Core */,
+				5F6D8D6FDD72B41261456927 /* Support Files */,
+				E19A4A9DC70BAE88F3356F09 /* UI */,
+				0725F0B76F5934ED03798E04 /* no-arc */,
+			);
+			path = ReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		4F2886132E023BBBADB3384A = {
+			isa = PBXGroup;
+			children = (
+				682755F875CE6B5C97131C7D /* Podfile */,
+				87B06288E38E75DB7FA57D68 /* Frameworks */,
+				78A47265B8DF431AE2991CE0 /* Pods */,
+				5EC7FC898942A2E39693DF02 /* Products */,
+				E0FEFEB44AEE6D6EAC4DD0BB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		578CE5589E6AC89EA23440ED /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DB8A198C253A8D694DCDD608 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5EC7FC898942A2E39693DF02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				723514667358EBC545ED4FC6 /* libPods-ComicSearch.a */,
+				5B2245EE1217E9CCE9F859E3 /* libPods-ComicSearch-ReactiveCocoa.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F6D8D6FDD72B41261456927 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A2D64BAD1E5D73D7F3ECCD3 /* Pods-ComicSearch-ReactiveCocoa.xcconfig */,
+				23E2B76B2739E2AAF86743D1 /* Pods-ComicSearch-ReactiveCocoa-Private.xcconfig */,
+				E44234C5A1BC234AA253CFD8 /* Pods-ComicSearch-ReactiveCocoa-dummy.m */,
+				B28D927B5C22485FC8AC846D /* Pods-ComicSearch-ReactiveCocoa-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ComicSearch-ReactiveCocoa";
+			sourceTree = "<group>";
+		};
+		78A47265B8DF431AE2991CE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42127771FC68BDFF9CEB9F3E /* ReactiveCocoa */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		87B06288E38E75DB7FA57D68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578CE5589E6AC89EA23440ED /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1CB8B34E86CCBC0D63EC44B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AEF1E9BF4D7A323F427954AF /* NSArray+RACSequenceAdditions.h */,
+				31A84D933E759460076FED10 /* NSArray+RACSequenceAdditions.m */,
+				5D524B127E42CA0BB9E8B47D /* NSData+RACSupport.h */,
+				5463F37032B9C59CAC48B15F /* NSData+RACSupport.m */,
+				CBD01E057B837FACFBD6D281 /* NSDictionary+RACSequenceAdditions.h */,
+				9088BD564DD51D2A0DEBAC6B /* NSDictionary+RACSequenceAdditions.m */,
+				30EA2A7A2847F5264090807D /* NSEnumerator+RACSequenceAdditions.h */,
+				2DEBCBFCBE19773D2F6D9081 /* NSEnumerator+RACSequenceAdditions.m */,
+				313874DDCF581259DDF01256 /* NSFileHandle+RACSupport.h */,
+				EA5883238BFFA1ACBEFF8561 /* NSFileHandle+RACSupport.m */,
+				91503BC14B0E5E3D250F2927 /* NSIndexSet+RACSequenceAdditions.h */,
+				BA623C4934E78B864944ED06 /* NSIndexSet+RACSequenceAdditions.m */,
+				F283E07DD99878AC45A58B96 /* NSInvocation+RACTypeParsing.h */,
+				F72C7738C504FE72D0A3F802 /* NSInvocation+RACTypeParsing.m */,
+				6EF5889063359BEB3A86F9E7 /* NSNotificationCenter+RACSupport.h */,
+				AE26EF998AFFE46E7766D957 /* NSNotificationCenter+RACSupport.m */,
+				4365562B2B4B545E266CBA03 /* NSObject+RACDeallocating.h */,
+				35D1FB84005EC1E7C346D5DF /* NSObject+RACDeallocating.m */,
+				0F87A34445D35EE40B0917BE /* NSObject+RACDescription.h */,
+				D66D864901F6570422E1F85B /* NSObject+RACDescription.m */,
+				C7BB16B7DF689030D1EE74C4 /* NSObject+RACKVOWrapper.h */,
+				2B350CEDFCC867B9F5BC2049 /* NSObject+RACKVOWrapper.m */,
+				20A6F2648D7948EFEFA4B271 /* NSObject+RACLifting.h */,
+				B8BFB27048EF90AC067DDE41 /* NSObject+RACLifting.m */,
+				D5C83B10BDF2A14600710260 /* NSObject+RACPropertySubscribing.h */,
+				FBB85FBCD3D731AC2FF95E4C /* NSObject+RACPropertySubscribing.m */,
+				80151C1160DC0E2C44E7E450 /* NSObject+RACSelectorSignal.h */,
+				85E0A25A881AC68C67C0F262 /* NSObject+RACSelectorSignal.m */,
+				D05449AB36C5046AD54B966D /* NSOrderedSet+RACSequenceAdditions.h */,
+				D4DBB87F977EDA8C45932F5F /* NSOrderedSet+RACSequenceAdditions.m */,
+				90A2F7F564969CCCB0083788 /* NSSet+RACSequenceAdditions.h */,
+				B40717173A45A92039B788B9 /* NSSet+RACSequenceAdditions.m */,
+				93215A8140DA4FE75B03262D /* NSString+RACKeyPathUtilities.h */,
+				F204375A5385ECC85988C163 /* NSString+RACKeyPathUtilities.m */,
+				09761B9818B1D9042B6724C5 /* NSString+RACSequenceAdditions.h */,
+				B30049D6B1BD60296E8B2B30 /* NSString+RACSequenceAdditions.m */,
+				C12A3F6D3D54A3D3B6D0FCC3 /* NSString+RACSupport.h */,
+				DC75AE1E340FAAFF596F8955 /* NSString+RACSupport.m */,
+				8A806B3C99422541799292D6 /* NSURLConnection+RACSupport.h */,
+				9BF0A17986DF759A86AE65B1 /* NSURLConnection+RACSupport.m */,
+				F3589F7A1CB509FA44B008AB /* NSUserDefaults+RACSupport.h */,
+				846297E0D9C7A94646F0583E /* NSUserDefaults+RACSupport.m */,
+				151C3D3E44FA0197C96C4F6E /* RACArraySequence.h */,
+				9AFA62D8A8857241CB6FB9C6 /* RACArraySequence.m */,
+				817696765C0AC0CBCA775A65 /* RACBehaviorSubject.h */,
+				C1D848BD2B86977F8828C4C4 /* RACBehaviorSubject.m */,
+				85004AB4A6D9A3DD74530EE7 /* RACBlockTrampoline.h */,
+				C90C621AB76381337F63A1C5 /* RACBlockTrampoline.m */,
+				ADB472A4B63C345B5360FB02 /* RACChannel.h */,
+				C7F47CEE101AECDBB92DB8CD /* RACChannel.m */,
+				23F832DB8E5A229A3E6BDAB9 /* RACCommand.h */,
+				F62F1452444483F0D0036478 /* RACCommand.m */,
+				798D8A58904092062BD35215 /* RACCompoundDisposable.h */,
+				C48A86F49CCD99C62420168D /* RACCompoundDisposable.m */,
+				F6C14877CB54BB6A55B0BBD7 /* RACCompoundDisposableProvider.d */,
+				815C8FF46D80AB709C6E129B /* RACDelegateProxy.h */,
+				A7E594745D491DDAFEB7865C /* RACDelegateProxy.m */,
+				556452DADECEB669C62ADDA2 /* RACDisposable.h */,
+				724A7575CF174FBE606BDDAA /* RACDisposable.m */,
+				A8A49942F03D50073812D151 /* RACDynamicSequence.h */,
+				11117BD090A4F4F7419B3868 /* RACDynamicSequence.m */,
+				8DEC0521C6C4920DC334A684 /* RACDynamicSignal.h */,
+				4306887990F214A01D157E90 /* RACDynamicSignal.m */,
+				2F82A3FA63389C283BD2E715 /* RACEXTKeyPathCoding.h */,
+				6C63879A805F87F2985A647E /* RACEXTRuntimeExtensions.h */,
+				71FA34773EA0532B4BA52E6D /* RACEXTRuntimeExtensions.m */,
+				58E33C47C7ADD94F45B731F3 /* RACEXTScope.h */,
+				2E4DEDCDC5BFFD6CB52DF892 /* RACEagerSequence.h */,
+				E7B2AEB1E88671521284BF4E /* RACEagerSequence.m */,
+				48655644AB72E821D6F6649B /* RACEmptySequence.h */,
+				1BAAB8C485D1F3ADE19E312A /* RACEmptySequence.m */,
+				34AFE098B83DFFCB541048D9 /* RACEmptySignal.h */,
+				2C4A19D84E3E72F83F088551 /* RACEmptySignal.m */,
+				E7605749F9BB30615EFFFAF0 /* RACErrorSignal.h */,
+				33D142F866B21444EA3BA422 /* RACErrorSignal.m */,
+				CA07EB1DC50E904FB1E49913 /* RACEvent.h */,
+				6CB222B18EF38861A20D223E /* RACEvent.m */,
+				2212F2685CFF5A2CD1A762B1 /* RACGroupedSignal.h */,
+				E99C0C7B6C67B87FE77CA78C /* RACGroupedSignal.m */,
+				74EDFA33092AFEC214B86641 /* RACImmediateScheduler.h */,
+				7EA0D3A9BF246B8BCD8C620A /* RACImmediateScheduler.m */,
+				4DBA7C691630971B39A85D51 /* RACIndexSetSequence.h */,
+				B38D39970EEAABDAC7ECF03F /* RACIndexSetSequence.m */,
+				58B4D07D5F804A57379FD4F7 /* RACKVOChannel.h */,
+				99C14D707BF915104BEDE8B6 /* RACKVOChannel.m */,
+				67F42C519ECFBB20B0F9E68F /* RACKVOProxy.h */,
+				C0DE1C154228EBA436EB860A /* RACKVOProxy.m */,
+				858EA2CF0CFC902FC9B82A55 /* RACKVOTrampoline.h */,
+				054CC3176D0B2CF179E63B31 /* RACKVOTrampoline.m */,
+				F508522122E339F5AE882B7E /* RACMulticastConnection.h */,
+				BDFF19A57316F70DDE2F793F /* RACMulticastConnection.m */,
+				1BD6318C582F38E8424EF9B9 /* RACMulticastConnection+Private.h */,
+				F77B3151312A7075C3E5769B /* RACPassthroughSubscriber.h */,
+				8D38562E30D7C235F6BFA537 /* RACPassthroughSubscriber.m */,
+				DA4E60DBA29C1F911D6B9413 /* RACQueueScheduler.h */,
+				C1458243ECE79FD8530D5C70 /* RACQueueScheduler.m */,
+				B6ECC5837873FA5BED139FED /* RACQueueScheduler+Subclass.h */,
+				F3498C2E1AAD4BA81136BDE2 /* RACReplaySubject.h */,
+				2D1F639886AD3B98594B7693 /* RACReplaySubject.m */,
+				026B1FDEFF6F8B6EAE502388 /* RACReturnSignal.h */,
+				A0CB851A4C2CF7E22EFBF1E6 /* RACReturnSignal.m */,
+				170072051085D97D9A4F2726 /* RACScheduler.h */,
+				4BB817C714C574976E35A43C /* RACScheduler.m */,
+				BC34B7D690AF3A5CC6DD7A55 /* RACScheduler+Private.h */,
+				A1A628A2FEACC9356FB45D7F /* RACScheduler+Subclass.h */,
+				F1A6C10D516DF1A105D5314B /* RACScopedDisposable.h */,
+				F3B128082AD3C66FD58B6336 /* RACScopedDisposable.m */,
+				71C96BBD8E227EC026B7F8C4 /* RACSequence.h */,
+				A7E1181CFEDF16C9869628B2 /* RACSequence.m */,
+				C4B54706E05961AD895AE764 /* RACSerialDisposable.h */,
+				A122876DB7196DB266ECEAE5 /* RACSerialDisposable.m */,
+				4DEAF5A5587A14FCF2EAACD1 /* RACSignal.h */,
+				049E87261C212A5485EB1DE4 /* RACSignal.m */,
+				E365E8B46777E5AD725CFF83 /* RACSignal+Operations.h */,
+				6AA33DFCC494D76E5AD1659F /* RACSignal+Operations.m */,
+				61F1E4CE904897D0F39F40FD /* RACSignalProvider.d */,
+				774D5C2628326100F0BDF5E0 /* RACSignalSequence.h */,
+				B9C9825B374B6C3C9B0F5D09 /* RACSignalSequence.m */,
+				6DACC44942817FC21B974590 /* RACStream.h */,
+				6F8F174132CFA84AFF957F86 /* RACStream.m */,
+				8C636F67FF5D525BF4B7B58E /* RACStream+Private.h */,
+				73EDBA0E1E02756C083EFE47 /* RACStringSequence.h */,
+				791EEEA2EC9A9C06AD3FF13A /* RACStringSequence.m */,
+				83E544F22410EBAEC27E75EA /* RACSubject.h */,
+				C55F00E393ECCC989CD88EE8 /* RACSubject.m */,
+				1C94C799284F39880F571338 /* RACSubscriber.h */,
+				F036B469A1692B933114704C /* RACSubscriber.m */,
+				B9D7BD91CC38617628687B74 /* RACSubscriber+Private.h */,
+				7F955D6A39809AA4C51F4F3C /* RACSubscriptingAssignmentTrampoline.h */,
+				411E43478CDC8B865F3B0584 /* RACSubscriptingAssignmentTrampoline.m */,
+				285EBED9E9BF5937AA553DB8 /* RACSubscriptionScheduler.h */,
+				0F4E547A3824546A1AF3E1A8 /* RACSubscriptionScheduler.m */,
+				455B0B43E27BCAD184F86EA9 /* RACTargetQueueScheduler.h */,
+				586A6D1E33F7CD3244A21429 /* RACTargetQueueScheduler.m */,
+				78AC5F678953A2E310D657FE /* RACTestScheduler.h */,
+				5DF2DA92D0D93886C13C9BBD /* RACTestScheduler.m */,
+				A54F458A8711CC2D6652D574 /* RACTuple.h */,
+				C659594A144F3853CFF29E52 /* RACTuple.m */,
+				B7CE597566F1D211E091EE4C /* RACTupleSequence.h */,
+				54FEFDA5F5BA63203C5E0980 /* RACTupleSequence.m */,
+				D12FF9E20FBEB23C7215900C /* RACUnarySequence.h */,
+				D949539607ACB4F2DC02B57B /* RACUnarySequence.m */,
+				0E24F6135D78C4F951645839 /* RACUnit.h */,
+				8551DDCD116473878F2D08DA /* RACUnit.m */,
+				4354B849CA24E15A36595A17 /* RACValueTransformer.h */,
+				57F5B5C5C0170F568D40ADF1 /* RACValueTransformer.m */,
+				52DAB3026C2374A894A30F22 /* RACmetamacros.h */,
+				D4D2F031ABAE5BBE247B8988 /* ReactiveCocoa.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E0FEFEB44AEE6D6EAC4DD0BB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				138A428F1409269C0A65FFD2 /* Pods-ComicSearch */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E19A4A9DC70BAE88F3356F09 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C3AC35D37FEEE38A71239921 /* MKAnnotationView+RACSignalSupport.h */,
+				80CD8A0048A3B6E9E8FC3697 /* MKAnnotationView+RACSignalSupport.m */,
+				87C380D0E6943139E5F6D58E /* UIActionSheet+RACSignalSupport.h */,
+				B6F0CE9A45E164CEB4CCDDF1 /* UIActionSheet+RACSignalSupport.m */,
+				C5022BDA72C3E29A6FC1DC79 /* UIAlertView+RACSignalSupport.h */,
+				4C14EAE7B02F2B0F819076E1 /* UIAlertView+RACSignalSupport.m */,
+				80AC406BC772522E2A6D03EC /* UIBarButtonItem+RACCommandSupport.h */,
+				2123DF34E11E0D64C6DA0D97 /* UIBarButtonItem+RACCommandSupport.m */,
+				6FD2D1267013B131324A4D17 /* UIButton+RACCommandSupport.h */,
+				5C1E514E7C340EACB4B898CC /* UIButton+RACCommandSupport.m */,
+				6CA610CDB2BF560A653A9413 /* UICollectionReusableView+RACSignalSupport.h */,
+				3F684D79D88262D37508058A /* UICollectionReusableView+RACSignalSupport.m */,
+				849AC5BA78FC7B789CECA495 /* UIControl+RACSignalSupport.h */,
+				9C9759F6468AF0EE6B7197CD /* UIControl+RACSignalSupport.m */,
+				B4232140B302B8775C9B969F /* UIControl+RACSignalSupportPrivate.h */,
+				C8471E67A77A27F84C33303F /* UIControl+RACSignalSupportPrivate.m */,
+				15B80A97CF16173AD3440B74 /* UIDatePicker+RACSignalSupport.h */,
+				4AAC9650EF77418E2E730E6F /* UIDatePicker+RACSignalSupport.m */,
+				B947AD366F459086732AA1E7 /* UIGestureRecognizer+RACSignalSupport.h */,
+				BF93116DE3622D8901ECD8D6 /* UIGestureRecognizer+RACSignalSupport.m */,
+				013715FB0AF1EEA8CB58BE51 /* UIImagePickerController+RACSignalSupport.h */,
+				CBB9C362087BFA89B5AC6820 /* UIImagePickerController+RACSignalSupport.m */,
+				4544D4127D83B274A4B5ED1E /* UIRefreshControl+RACCommandSupport.h */,
+				500060CC42FE8BD27F531CD6 /* UIRefreshControl+RACCommandSupport.m */,
+				846A7614202F4662CC92F2C6 /* UISegmentedControl+RACSignalSupport.h */,
+				6E27D377DA87F079859A3B90 /* UISegmentedControl+RACSignalSupport.m */,
+				4E0A61E544B97E7A0F07EECD /* UISlider+RACSignalSupport.h */,
+				4C5BF6C105A8428FAB865536 /* UISlider+RACSignalSupport.m */,
+				10F47097395C291E82661D5D /* UIStepper+RACSignalSupport.h */,
+				5A0370DE60720046E6156A2A /* UIStepper+RACSignalSupport.m */,
+				8EFBB98FFC4800B2DCA6AE37 /* UISwitch+RACSignalSupport.h */,
+				D44940438635E184CB1F9BD5 /* UISwitch+RACSignalSupport.m */,
+				5B78E8B0DE59861E2E5BAE94 /* UITableViewCell+RACSignalSupport.h */,
+				53DB904699510EC153DE3AE1 /* UITableViewCell+RACSignalSupport.m */,
+				45C1709AC43953347A0B089D /* UITableViewHeaderFooterView+RACSignalSupport.h */,
+				0E55712615DB7E168A047030 /* UITableViewHeaderFooterView+RACSignalSupport.m */,
+				FE545BC3390138315218C029 /* UITextField+RACSignalSupport.h */,
+				52934EDE8A53E9F45145D5F8 /* UITextField+RACSignalSupport.m */,
+				BDA81E09C931638C0EA8CDBB /* UITextView+RACSignalSupport.h */,
+				EFC81DF5D3B25425C3225464 /* UITextView+RACSignalSupport.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF7F854F01F1D99363C873A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFF55544E5408284C6997BCA /* MKAnnotationView+RACSignalSupport.h in Headers */,
+				6821885AAF03DB5DED6BBD0C /* NSArray+RACSequenceAdditions.h in Headers */,
+				2276E7AD8E72EC6188695467 /* NSData+RACSupport.h in Headers */,
+				18F1BF34961FCEA108F6B5E3 /* NSDictionary+RACSequenceAdditions.h in Headers */,
+				370BBB3241463506417678FB /* NSEnumerator+RACSequenceAdditions.h in Headers */,
+				B2DC606C7BDAA013407EA9B2 /* NSFileHandle+RACSupport.h in Headers */,
+				71FA4F45CBC94E74F8C04785 /* NSIndexSet+RACSequenceAdditions.h in Headers */,
+				5BB3FFE5D9754CD4A72E9049 /* NSInvocation+RACTypeParsing.h in Headers */,
+				D873EA55319843B6BCAEB162 /* NSNotificationCenter+RACSupport.h in Headers */,
+				6A58825110E726130F83C6D4 /* NSObject+RACDeallocating.h in Headers */,
+				7AEC5000CF5E19AEB8C6829D /* NSObject+RACDescription.h in Headers */,
+				A1E9292975D1EDD590B0D94E /* NSObject+RACKVOWrapper.h in Headers */,
+				D8EE357F51EE385316F5CED0 /* NSObject+RACLifting.h in Headers */,
+				A5F8E7077F531770567F2137 /* NSObject+RACPropertySubscribing.h in Headers */,
+				072F61A5D998D4DA33590BFB /* NSObject+RACSelectorSignal.h in Headers */,
+				2516C6E8E6DDEE236997BA0F /* NSOrderedSet+RACSequenceAdditions.h in Headers */,
+				382FE6BDEBDFEBDFC88B5DE3 /* NSSet+RACSequenceAdditions.h in Headers */,
+				C1B0D454621911D89E80C5E0 /* NSString+RACKeyPathUtilities.h in Headers */,
+				8494A6F747D1929D82C224DF /* NSString+RACSequenceAdditions.h in Headers */,
+				AF50E2639BB417D3418351CA /* NSString+RACSupport.h in Headers */,
+				B16AEC05D5C0811D4B14AABE /* NSURLConnection+RACSupport.h in Headers */,
+				7B4193E40BDD58DF293F9F7C /* NSUserDefaults+RACSupport.h in Headers */,
+				3109B0797EF6CB3FE67DBBB3 /* RACArraySequence.h in Headers */,
+				B4CD20E8227E8F378F4A8A96 /* RACBehaviorSubject.h in Headers */,
+				02812C310199B4B9011DD6FA /* RACBlockTrampoline.h in Headers */,
+				1195EA620608E8F9C629C920 /* RACChannel.h in Headers */,
+				1E51F1B55933104C9CA1CC59 /* RACCommand.h in Headers */,
+				787301FF05C443B9802E791A /* RACCompoundDisposable.h in Headers */,
+				EA147F306DFD2148BFECAE4E /* RACDelegateProxy.h in Headers */,
+				9BAB30B21C2ABDDAC06C55CD /* RACDisposable.h in Headers */,
+				CD47EE9AB9B99EB0E95D2CB9 /* RACDynamicSequence.h in Headers */,
+				2B83B4DE9537CA526F0FB498 /* RACDynamicSignal.h in Headers */,
+				7257667D8A15A3EEB1DE9B7A /* RACEXTKeyPathCoding.h in Headers */,
+				D079DC87A26C92F2A1D64C31 /* RACEXTRuntimeExtensions.h in Headers */,
+				22439E64933B4DEB14BF53BA /* RACEXTScope.h in Headers */,
+				0D8B505B846D270799F70EEB /* RACEagerSequence.h in Headers */,
+				053C28B8F60D32764F71A6A3 /* RACEmptySequence.h in Headers */,
+				D3C99DDAC52B9CC5D9D6862A /* RACEmptySignal.h in Headers */,
+				0FC3D11891E374EF198773A1 /* RACErrorSignal.h in Headers */,
+				6E06328E4CEFCC4165574419 /* RACEvent.h in Headers */,
+				3DB48CE882644810C5A470F8 /* RACGroupedSignal.h in Headers */,
+				CF39FE0FA42CD52E23EE564B /* RACImmediateScheduler.h in Headers */,
+				D5D562456E09E60D1CB410DB /* RACIndexSetSequence.h in Headers */,
+				C8FF4715A1443B0593F2C14C /* RACKVOChannel.h in Headers */,
+				4BFB778153520CF45EDDC027 /* RACKVOProxy.h in Headers */,
+				842A4056A1BC4C024BDBEF85 /* RACKVOTrampoline.h in Headers */,
+				A6076CB070EEB99CDB334556 /* RACMulticastConnection+Private.h in Headers */,
+				EA2767A24A0FDF6B932EDCDA /* RACMulticastConnection.h in Headers */,
+				E055D6121841DD5A1D663C1B /* RACObjCRuntime.h in Headers */,
+				3015DCC02584DFB823865FE1 /* RACPassthroughSubscriber.h in Headers */,
+				7CAED81954DC602A963E9D50 /* RACQueueScheduler+Subclass.h in Headers */,
+				3259F487CB3100068E1F148C /* RACQueueScheduler.h in Headers */,
+				A7830608A95E5EDAE16FAAD1 /* RACReplaySubject.h in Headers */,
+				0F12510F7C1173DFE4B0E0EA /* RACReturnSignal.h in Headers */,
+				4E1A01F769ED8ED25E90F4C2 /* RACScheduler+Private.h in Headers */,
+				43944B5DD704E344655C8DD2 /* RACScheduler+Subclass.h in Headers */,
+				BE83EEC8446BE12CAC42C4FD /* RACScheduler.h in Headers */,
+				1B7DB408033BF3D02DB9407F /* RACScopedDisposable.h in Headers */,
+				C3C643E287A1551AF67D8061 /* RACSequence.h in Headers */,
+				D1162DE390035647F1BA0577 /* RACSerialDisposable.h in Headers */,
+				9888601E900D11A592C9F140 /* RACSignal+Operations.h in Headers */,
+				3B65EB767098DFF771EF2B38 /* RACSignal.h in Headers */,
+				21FBE67E1622A0C765955CC8 /* RACSignalSequence.h in Headers */,
+				0152A4CEB0EEB8FB81100AEE /* RACStream+Private.h in Headers */,
+				83EC419FE5A47AE56C83B698 /* RACStream.h in Headers */,
+				D6EED6DA7CEABC3190A2D461 /* RACStringSequence.h in Headers */,
+				031626D5038282C03B430EE9 /* RACSubject.h in Headers */,
+				300BF5E0666A93909ED94CED /* RACSubscriber+Private.h in Headers */,
+				E6D3D49FFBF3AA05820AD57A /* RACSubscriber.h in Headers */,
+				9D3E1C9BE728F3D5DCE51918 /* RACSubscriptingAssignmentTrampoline.h in Headers */,
+				D9AFBAEADB76F3A1EF7F88A2 /* RACSubscriptionScheduler.h in Headers */,
+				04EB6B5A58EF24E2EC8D5451 /* RACTargetQueueScheduler.h in Headers */,
+				1D29BDBE577B37501F44AD03 /* RACTestScheduler.h in Headers */,
+				AC5C63300701CBD3B16E1E8D /* RACTuple.h in Headers */,
+				D6F1A2FB0D1A7B5EBAD330CE /* RACTupleSequence.h in Headers */,
+				F5E84F2E3C2ADAA15FBB5279 /* RACUnarySequence.h in Headers */,
+				11829985233883EC02CE10F0 /* RACUnit.h in Headers */,
+				C1C49D5C638AC921EDAACE28 /* RACValueTransformer.h in Headers */,
+				2AC1002F5ADA6EE46ED66830 /* RACmetamacros.h in Headers */,
+				A1E482F26F3DE5285E4F614E /* ReactiveCocoa.h in Headers */,
+				9BB22B84343F7738669A2F33 /* UIActionSheet+RACSignalSupport.h in Headers */,
+				3734577C764092ACDA8EA496 /* UIAlertView+RACSignalSupport.h in Headers */,
+				40D1EE075424FA008B5E9891 /* UIBarButtonItem+RACCommandSupport.h in Headers */,
+				C538E7B26AAE7AE213250402 /* UIButton+RACCommandSupport.h in Headers */,
+				B6F00FDD9F6DAD9FA906B561 /* UICollectionReusableView+RACSignalSupport.h in Headers */,
+				4FDE2A247F1BD50C49386A08 /* UIControl+RACSignalSupport.h in Headers */,
+				51FB2E9339C192D39002C9DA /* UIControl+RACSignalSupportPrivate.h in Headers */,
+				EAD8D35AF60489040C13BF31 /* UIDatePicker+RACSignalSupport.h in Headers */,
+				5F4DD85635B7C7DFF18ABD67 /* UIGestureRecognizer+RACSignalSupport.h in Headers */,
+				542829150C08655A656B9D72 /* UIImagePickerController+RACSignalSupport.h in Headers */,
+				380F808EC83245E12C85D3FD /* UIRefreshControl+RACCommandSupport.h in Headers */,
+				80CF4ED8A569E17675335E2F /* UISegmentedControl+RACSignalSupport.h in Headers */,
+				8CAF278A9EFD776C0973D0C9 /* UISlider+RACSignalSupport.h in Headers */,
+				8CF07CE6648EC48F630F822D /* UIStepper+RACSignalSupport.h in Headers */,
+				109F7128C7E092DEC04C169C /* UISwitch+RACSignalSupport.h in Headers */,
+				21DD42F9FFCF5CF53E37262F /* UITableViewCell+RACSignalSupport.h in Headers */,
+				BCA4E2F35113AB1A6DDBF904 /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */,
+				B59EA9D9485CC9CFE74F91E5 /* UITextField+RACSignalSupport.h in Headers */,
+				278911265AA06A9166646786 /* UITextView+RACSignalSupport.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C0F4D0485E7117FA3D5F5999 /* Pods-ComicSearch-ReactiveCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E555F7A77A8AF4683920C6 /* Build configuration list for PBXNativeTarget "Pods-ComicSearch-ReactiveCocoa" */;
+			buildPhases = (
+				8EFF49C8C5863AAF53E9D64E /* Sources */,
+				FD8F8C3937AD49D45D7BCA94 /* Frameworks */,
+				CF7F854F01F1D99363C873A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ComicSearch-ReactiveCocoa";
+			productName = "Pods-ComicSearch-ReactiveCocoa";
+			productReference = 5B2245EE1217E9CCE9F859E3 /* libPods-ComicSearch-ReactiveCocoa.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CBB6AB7A485784B342E776E6 /* Pods-ComicSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A5A60D1020D1735F0795CB /* Build configuration list for PBXNativeTarget "Pods-ComicSearch" */;
+			buildPhases = (
+				F986E61DE07B587AC49D2D5D /* Sources */,
+				58ACF3438FC3B4538D9FD1EE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5203FB27DB80A8A217ADEDD /* PBXTargetDependency */,
+			);
+			name = "Pods-ComicSearch";
+			productName = "Pods-ComicSearch";
+			productReference = 723514667358EBC545ED4FC6 /* libPods-ComicSearch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1177E4A16C8B77DB5BD0FF51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 1CB2A04648DF45888AB7278B /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F2886132E023BBBADB3384A;
+			productRefGroup = 5EC7FC898942A2E39693DF02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBB6AB7A485784B342E776E6 /* Pods-ComicSearch */,
+				C0F4D0485E7117FA3D5F5999 /* Pods-ComicSearch-ReactiveCocoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EFF49C8C5863AAF53E9D64E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				122AAD4E1BBFE06A8094490C /* MKAnnotationView+RACSignalSupport.m in Sources */,
+				687AFD0A4CF81EF3687F3075 /* NSArray+RACSequenceAdditions.m in Sources */,
+				E60AABBFBD630547B0FCA4FF /* NSData+RACSupport.m in Sources */,
+				021DF907BFD64850B95B4CD0 /* NSDictionary+RACSequenceAdditions.m in Sources */,
+				8ABCA6357A6D0D6058BD0F35 /* NSEnumerator+RACSequenceAdditions.m in Sources */,
+				14D7826AB9A8E615F20D43F9 /* NSFileHandle+RACSupport.m in Sources */,
+				84F9C20B5900BA48C30FA446 /* NSIndexSet+RACSequenceAdditions.m in Sources */,
+				7DCB5E6CAD85DD60079F0970 /* NSInvocation+RACTypeParsing.m in Sources */,
+				E6119548C2BF1713F7A63C21 /* NSNotificationCenter+RACSupport.m in Sources */,
+				ED95DBE982FA022181FFFFA0 /* NSObject+RACDeallocating.m in Sources */,
+				EF90A5317BEDA3AF6C98F704 /* NSObject+RACDescription.m in Sources */,
+				6C4A3957B06CFF9A38180330 /* NSObject+RACKVOWrapper.m in Sources */,
+				54962B0B57A1BCDE947251BE /* NSObject+RACLifting.m in Sources */,
+				4B2E4C0A1A6750394589BD3A /* NSObject+RACPropertySubscribing.m in Sources */,
+				63D36FE1DFE6E6D39A6664D0 /* NSObject+RACSelectorSignal.m in Sources */,
+				B03AFFC009183B8F8158E1ED /* NSOrderedSet+RACSequenceAdditions.m in Sources */,
+				850EA17EAC733D13444DBB6A /* NSSet+RACSequenceAdditions.m in Sources */,
+				F9301594E47BCC3BA10A524A /* NSString+RACKeyPathUtilities.m in Sources */,
+				D1882534FFBA431BBD84214A /* NSString+RACSequenceAdditions.m in Sources */,
+				7A977A4A2B0E0689B99366CF /* NSString+RACSupport.m in Sources */,
+				9D4E55D0205111E98E9D0CAE /* NSURLConnection+RACSupport.m in Sources */,
+				AC0ACC866F0F13941EDCD681 /* NSUserDefaults+RACSupport.m in Sources */,
+				FD60C2467A7E79867C2071BE /* Pods-ComicSearch-ReactiveCocoa-dummy.m in Sources */,
+				E53ED294ACEAFD541F2B58E0 /* RACArraySequence.m in Sources */,
+				D1442648B7C5BA397D9E696E /* RACBehaviorSubject.m in Sources */,
+				B1FF8B3460E7F296B67413AB /* RACBlockTrampoline.m in Sources */,
+				415DA86C91A3FB48F629CB03 /* RACChannel.m in Sources */,
+				F8B4C9ACE9039BB024E68EE0 /* RACCommand.m in Sources */,
+				3E12720653F2BE68E3730CA6 /* RACCompoundDisposable.m in Sources */,
+				A37B69CFBA743B10D6E02D0A /* RACCompoundDisposableProvider.d in Sources */,
+				019CF249B43D9936ADF87845 /* RACDelegateProxy.m in Sources */,
+				ACF31BC6A4E0693F986097C6 /* RACDisposable.m in Sources */,
+				00D966FB99B2D744C746FEB7 /* RACDynamicSequence.m in Sources */,
+				07860F5515DE8B8604F1644A /* RACDynamicSignal.m in Sources */,
+				ECA5F93EF17B34968755C500 /* RACEXTRuntimeExtensions.m in Sources */,
+				55C2534DEC4440319C228F16 /* RACEagerSequence.m in Sources */,
+				8F1E39746F048E7D2BADA02B /* RACEmptySequence.m in Sources */,
+				55F277E83EFA087A7B832B5A /* RACEmptySignal.m in Sources */,
+				6FB817955A7252985EEDE753 /* RACErrorSignal.m in Sources */,
+				FF720047D2E8F0F698A762BE /* RACEvent.m in Sources */,
+				0D270F904069B625324A719F /* RACGroupedSignal.m in Sources */,
+				C9C23EE910144AFE05E34671 /* RACImmediateScheduler.m in Sources */,
+				7CCBD16800464B1D91FC8D27 /* RACIndexSetSequence.m in Sources */,
+				EBFCE0872A4BF272845BC14C /* RACKVOChannel.m in Sources */,
+				B405D1F6955DC9BBABD72504 /* RACKVOProxy.m in Sources */,
+				EC0EFB5AE990E05E7923831F /* RACKVOTrampoline.m in Sources */,
+				11A7D61BBAA0B3192EA10533 /* RACMulticastConnection.m in Sources */,
+				11AEDC9E4AF91FCDA3E80FBB /* RACObjCRuntime.m in Sources */,
+				A456A22DA21A16E8DCD594AE /* RACPassthroughSubscriber.m in Sources */,
+				A30B29259647EBD1605B6D95 /* RACQueueScheduler.m in Sources */,
+				9808BC861FFC7E3E607DECB0 /* RACReplaySubject.m in Sources */,
+				B331D686FA36B0938E8EB302 /* RACReturnSignal.m in Sources */,
+				41FD367569A8683B58392955 /* RACScheduler.m in Sources */,
+				D13EE0AF2F7CA0B1FA380219 /* RACScopedDisposable.m in Sources */,
+				F2BA23FBBD6C8A3354BC6922 /* RACSequence.m in Sources */,
+				A641A1D5727917C315657CC4 /* RACSerialDisposable.m in Sources */,
+				20FF6870037E572203887625 /* RACSignal+Operations.m in Sources */,
+				D8B0F2A02190A7843338761F /* RACSignal.m in Sources */,
+				B53059C5D5853FCBD060110B /* RACSignalProvider.d in Sources */,
+				A2A5B3998F162C4DC55DD187 /* RACSignalSequence.m in Sources */,
+				19C6C44627B3B50F0AF5504B /* RACStream.m in Sources */,
+				D2EF1CFFCD62B905D4834362 /* RACStringSequence.m in Sources */,
+				D4E865D6277353BC83AF2529 /* RACSubject.m in Sources */,
+				5E11A5801619B90550B08376 /* RACSubscriber.m in Sources */,
+				48C86DCC0E71A9038E347E7A /* RACSubscriptingAssignmentTrampoline.m in Sources */,
+				EE71C126B9436DE5B64EE639 /* RACSubscriptionScheduler.m in Sources */,
+				A9F96FBA48838200E5094B1A /* RACTargetQueueScheduler.m in Sources */,
+				D92DC7119F9B3146FED93B18 /* RACTestScheduler.m in Sources */,
+				AE718CF128DD822C91083346 /* RACTuple.m in Sources */,
+				28CB40872C415F67420D391E /* RACTupleSequence.m in Sources */,
+				889C3E3ED0D0C4763A6378CE /* RACUnarySequence.m in Sources */,
+				0BA3E3A6B67D2852B2891037 /* RACUnit.m in Sources */,
+				98D874E552560E4E796220C4 /* RACValueTransformer.m in Sources */,
+				15080844139D76AB5E3F971E /* UIActionSheet+RACSignalSupport.m in Sources */,
+				4138D8A898503A3D956250DE /* UIAlertView+RACSignalSupport.m in Sources */,
+				0F010CB7A868D269EA2DAE80 /* UIBarButtonItem+RACCommandSupport.m in Sources */,
+				BD6D13839732A4F754423E76 /* UIButton+RACCommandSupport.m in Sources */,
+				2092F6CFA2F1C4C8F0FCEC6C /* UICollectionReusableView+RACSignalSupport.m in Sources */,
+				7FAEA7BA12F9D0C46FC9A27B /* UIControl+RACSignalSupport.m in Sources */,
+				D4EA226540A391A3BE295C45 /* UIControl+RACSignalSupportPrivate.m in Sources */,
+				63A33ED00365A7F30BD65BC0 /* UIDatePicker+RACSignalSupport.m in Sources */,
+				66047366EE73DBCBA339C1DC /* UIGestureRecognizer+RACSignalSupport.m in Sources */,
+				CC387C910215B16838CA4F70 /* UIImagePickerController+RACSignalSupport.m in Sources */,
+				C7F9B17F7DEEB204C493B820 /* UIRefreshControl+RACCommandSupport.m in Sources */,
+				CB8E8441DA09749DCBB0C0D6 /* UISegmentedControl+RACSignalSupport.m in Sources */,
+				CE0183C0389348165385DA77 /* UISlider+RACSignalSupport.m in Sources */,
+				FA82AFF9680A8BAC5A889E65 /* UIStepper+RACSignalSupport.m in Sources */,
+				A9002DDC3F6051EE253184E6 /* UISwitch+RACSignalSupport.m in Sources */,
+				5C07165E1B66E691AE68A828 /* UITableViewCell+RACSignalSupport.m in Sources */,
+				69F2A7923EEBB18B905D851F /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
+				430455433120B4B1414ED8F9 /* UITextField+RACSignalSupport.m in Sources */,
+				BD5AEDD84BBD509D76213DDE /* UITextView+RACSignalSupport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F986E61DE07B587AC49D2D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				555957F2E31D98659891EA50 /* Pods-ComicSearch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5203FB27DB80A8A217ADEDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ComicSearch-ReactiveCocoa";
+			target = C0F4D0485E7117FA3D5F5999 /* Pods-ComicSearch-ReactiveCocoa */;
+			targetProxy = 8F8072F5AA47F47B01D013C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29967BD125490ECC658D2FA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E2B76B2739E2AAF86743D1 /* Pods-ComicSearch-ReactiveCocoa-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ComicSearch-ReactiveCocoa/Pods-ComicSearch-ReactiveCocoa-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2F4D201F3D60CEB86C0D0A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C7610E092C60ED3C4EB70D6 /* Pods-ComicSearch.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		49AD7FE1D443B85986067188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CC21965E73392EAB97F516F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E2B76B2739E2AAF86743D1 /* Pods-ComicSearch-ReactiveCocoa-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ComicSearch-ReactiveCocoa/Pods-ComicSearch-ReactiveCocoa-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		955FA1F6532005D1BAA308AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1743E130E1DF6C7A394686F3 /* Pods-ComicSearch.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EF44361A11FAE051D37C3888 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CB2A04648DF45888AB7278B /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF44361A11FAE051D37C3888 /* Debug */,
+				49AD7FE1D443B85986067188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28E555F7A77A8AF4683920C6 /* Build configuration list for PBXNativeTarget "Pods-ComicSearch-ReactiveCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC21965E73392EAB97F516F /* Debug */,
+				29967BD125490ECC658D2FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A5A60D1020D1735F0795CB /* Build configuration list for PBXNativeTarget "Pods-ComicSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F4D201F3D60CEB86C0D0A69 /* Debug */,
+				955FA1F6532005D1BAA308AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1177E4A16C8B77DB5BD0FF51 /* Project object */;
+}

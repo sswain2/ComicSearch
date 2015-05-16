@@ -8,6 +8,8 @@
 
 #import "SuggestionsViewModel.h"
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 @interface SuggestionsViewModel ()
 
 @property (copy, nonatomic) NSArray *suggestions;
@@ -15,10 +17,6 @@
 @end
 
 @implementation SuggestionsViewModel
-
-- (void)setQuery:(NSString *)query {
-    NSLog(@"query: %@", query);
-}
 
 - (NSUInteger)numberOfSuggestions {
     return self.suggestions.count;
@@ -36,5 +34,7 @@
     }
     return self;
 }
+
+#pragma mark - Private
 
 @end
