@@ -8,6 +8,7 @@
 
 #import "ComicVineClient.h"
 #import "Response.h"
+#import "Volume.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
@@ -46,7 +47,7 @@ static NSString * const format = @"json";
          @"resources": @"volume"
     };
     
-    return [self GET:@"search" parameters:parameters resultClass:Nil];
+    return [self GET:@"search" parameters:parameters resultClass:[Volume class]];
 }
 
 #pragma mark - Private

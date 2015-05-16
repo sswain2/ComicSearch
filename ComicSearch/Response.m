@@ -8,13 +8,25 @@
 
 #import "Response.h"
 
+@interface Response ()
+
+@property (strong, nonatomic) id results;
+
+@end
+
 @implementation Response
 
 + (instancetype)responseWithJSONDictionary:(NSDictionary *)JSONDictionary resultClass:(Class)resultClass
 {
     Response *response = [MTLJSONAdapter modelOfClass:self fromJSONDictionary:JSONDictionary error:NULL];
     
-    // TODO: implementar esto!
+    id results = JSONDictionary[@"results"];
+    
+    if ([results isKindOfClass:[NSArray class]]) {
+        response.results = [MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:results error:NULL];
+    } else {
+        response.results = [MTLJSONAdapter modelOfClass:resultClass fromJSONDictionary:results error:NULL];
+    }
     
     return response;
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26911B07583F005D7B67 /* ComicVineClient.m */; };
 		B41A26951B07801B005D7B67 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26941B07801B005D7B67 /* Response.m */; };
+		B41A26981B079094005D7B67 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26971B079094005D7B67 /* Volume.m */; };
 		B41D7B9F1B063F9400516C05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D7B9E1B063F9400516C05 /* main.m */; };
 		B41D7BA21B063F9400516C05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D7BA11B063F9400516C05 /* AppDelegate.m */; };
 		B41D7BAB1B063F9400516C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D7BA91B063F9400516C05 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 		B41A26911B07583F005D7B67 /* ComicVineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicVineClient.m; sourceTree = "<group>"; };
 		B41A26931B07801B005D7B67 /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
 		B41A26941B07801B005D7B67 /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
+		B41A26961B079094005D7B67 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
+		B41A26971B079094005D7B67 /* Volume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Volume.m; sourceTree = "<group>"; };
 		B41D7B991B063F9400516C05 /* ComicSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41D7B9D1B063F9400516C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41D7B9E1B063F9400516C05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				B41A26911B07583F005D7B67 /* ComicVineClient.m */,
 				B41A26931B07801B005D7B67 /* Response.h */,
 				B41A26941B07801B005D7B67 /* Response.m */,
+				B41A26961B079094005D7B67 /* Volume.h */,
+				B41A26971B079094005D7B67 /* Volume.m */,
 			);
 			path = ComicSearch;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				B41D7BCB1B06476500516C05 /* SuggestionsViewController.m in Sources */,
 				B41D7BCF1B064DAF00516C05 /* SuggestionsViewModel.m in Sources */,
 				B41A26951B07801B005D7B67 /* Response.m in Sources */,
+				B41A26981B079094005D7B67 /* Volume.m in Sources */,
 				B41D7BA21B063F9400516C05 /* AppDelegate.m in Sources */,
 				B41D7BC71B06417C00516C05 /* SearchViewController.m in Sources */,
 				B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */,
