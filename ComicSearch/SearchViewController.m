@@ -9,7 +9,7 @@
 #import "SearchViewController.h"
 #import "SuggestionsViewController.h"
 
-@interface SearchViewController ()
+@interface SearchViewController ()<SuggestionsViewControllerDelegate, UISearchBarDelegate>
 
 @end
 
@@ -25,13 +25,35 @@
     return 0;
 }
 
+#pragma mark - SuggestionsViewControllerDelegate
+
+- (void)suggestionsViewController:(SuggestionsViewController *)viewController didSelectSuggestion:(NSString *)suggestion
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // TODO: implementar
+    NSLog(@"didSelectSuggestion: %@", suggestion);
+}
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // TODO: implementar
+    NSLog(@"searchBarButtonClicked: %@", searchBar.text);
+}
+
 #pragma mark - Actions
 
 - (IBAction)presentSuggestions:(id)sender {
     SuggestionsViewController *suggestionsVC = [SuggestionsViewController new];
+    suggestionsVC.delegate = self;
+    
     UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:suggestionsVC];
     searchController.searchResultsUpdater = suggestionsVC;
     searchController.hidesNavigationBarDuringPresentation = NO;
+    searchController.searchBar.delegate = self;
     
     [self presentViewController:searchController animated:YES completion:nil];
 }

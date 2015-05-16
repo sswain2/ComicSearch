@@ -50,6 +50,14 @@ static NSString * const reuseIdentifier = @"SuggestionCell";
     return cell;
 }
 
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *suggestion = [self.viewModel suggestionAtIndex:indexPath.row];
+    [self.delegate suggestionsViewController:self didSelectSuggestion:suggestion];
+}
+
 #pragma mark - UISearchResultsUpdating
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
