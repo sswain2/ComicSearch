@@ -36,7 +36,9 @@
         }];
         input = [input throttle:.4];
         
+        @weakify(self);
         RACSignal *suggestionsSignal = [input flattenMap:^RACStream *(NSString *query) {
+            @strongify(self);
             return [self fetchSuggestionsWithQuery:query];
         }];
         
@@ -52,7 +54,7 @@
 - (RACSignal *)fetchSuggestionsWithQuery:(NSString *)query {
     NSArray *fakeSuggestions = [query componentsSeparatedByString:@" "];
     
-    return [[RACSignal return:fakeSuggestions] delay:.5];
+    return [[RACSignal return:fakeSuggestions] delay:.1];
 }
 
 @end

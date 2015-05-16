@@ -28,7 +28,9 @@ static NSString * const reuseIdentifier = @"SuggestionCell";
     
     self.viewModel = [SuggestionsViewModel new];
     
+    @weakify(self);
     [self.viewModel.didUpdateSuggestionsSignal subscribeNext:^(id x) {
+        @strongify(self);
         [self.tableView reloadData];
     }];
 }

@@ -3,6 +3,7 @@
 
 target 'ComicSearch' do
   pod 'ReactiveCocoa'
+  pod 'AFNetworking'
 end
 
 target 'ComicSearchTests' do
