@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26911B07583F005D7B67 /* ComicVineClient.m */; };
 		B41D7B9F1B063F9400516C05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D7B9E1B063F9400516C05 /* main.m */; };
 		B41D7BA21B063F9400516C05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D7BA11B063F9400516C05 /* AppDelegate.m */; };
 		B41D7BAB1B063F9400516C05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D7BA91B063F9400516C05 /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		5CA07D1C1B6C80CBA0C2521D /* Pods-ComicSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComicSearch/Pods-ComicSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		73499A4924D3EA6B6423EB2B /* libPods-ComicSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DE04F7D128956EB7D58E54 /* Pods-ComicSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComicSearch/Pods-ComicSearch.release.xcconfig"; sourceTree = "<group>"; };
+		B41A26901B07583F005D7B67 /* ComicVineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicVineClient.h; sourceTree = "<group>"; };
+		B41A26911B07583F005D7B67 /* ComicVineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicVineClient.m; sourceTree = "<group>"; };
 		B41D7B991B063F9400516C05 /* ComicSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41D7B9D1B063F9400516C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41D7B9E1B063F9400516C05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				B41D7BAC1B063F9400516C05 /* Images.xcassets */,
 				B41D7BAE1B063F9400516C05 /* LaunchScreen.xib */,
 				B41D7B9C1B063F9400516C05 /* Supporting Files */,
+				B41A26901B07583F005D7B67 /* ComicVineClient.h */,
+				B41A26911B07583F005D7B67 /* ComicVineClient.m */,
 			);
 			path = ComicSearch;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				B41D7BCF1B064DAF00516C05 /* SuggestionsViewModel.m in Sources */,
 				B41D7BA21B063F9400516C05 /* AppDelegate.m in Sources */,
 				B41D7BC71B06417C00516C05 /* SearchViewController.m in Sources */,
+				B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */,
 				B41D7B9F1B063F9400516C05 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
