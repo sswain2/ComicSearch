@@ -8,6 +8,8 @@
 
 #import "SuggestionsViewModel.h"
 #import "ComicVineClient.h"
+#import "Response.h"
+#import "Volume.h"
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
@@ -55,8 +57,18 @@
 - (RACSignal *)fetchSuggestionsWithQuery:(NSString *)query {
     ComicVineClient *client = [ComicVineClient new];
     
-    return [[client fetchSuggestedVolumesWithQuery:query] map:^id(id value) {
-        return @[@"hola", @"gente"];
+    return [[client fetchSuggestedVolumesWithQuery:query] map:^id(Response *response) {
+        NSArray *volumes = response.results;
+        NSMutableArray *titles = [NSMutableArray array];
+        
+        for (Volume *volume in volumes) {
+            if ([titles containsObject:volume.title]) {
+                continue;
+            }
+            [titles addObject:volume.title];
+        }
+        
+        return titles;
     }];
 }
 
