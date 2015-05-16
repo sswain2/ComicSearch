@@ -9,6 +9,8 @@
 #import "SuggestionsViewController.h"
 #import "SuggestionsViewModel.h"
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 static NSString * const reuseIdentifier = @"SuggestionCell";
 
 @interface SuggestionsViewController ()
@@ -25,6 +27,10 @@ static NSString * const reuseIdentifier = @"SuggestionCell";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuseIdentifier];
     
     self.viewModel = [SuggestionsViewModel new];
+    
+    [self.viewModel.didUpdateSuggestionsSignal subscribeNext:^(id x) {
+        [self.tableView reloadData];
+    }];
 }
 
 #pragma mark - Table view data source

@@ -30,11 +30,29 @@
 {
     self = [super init];
     if (self) {
-        _suggestions = @[@"Hello", @"world"];
+        RACSignal *input = RACObserve(self, query);
+        input = [input filter:^BOOL(NSString *value) {
+            return value.length > 2;
+        }];
+        input = [input throttle:.4];
+        
+        RACSignal *suggestionsSignal = [input flattenMap:^RACStream *(NSString *query) {
+            return [self fetchSuggestionsWithQuery:query];
+        }];
+        
+        RAC(self, suggestions) = suggestionsSignal;
+        
+        _didUpdateSuggestionsSignal = [suggestionsSignal mapReplace:nil];
     }
     return self;
 }
 
 #pragma mark - Private
+
+- (RACSignal *)fetchSuggestionsWithQuery:(NSString *)query {
+    NSArray *fakeSuggestions = [query componentsSeparatedByString:@" "];
+    
+    return [[RACSignal return:fakeSuggestions] delay:.5];
+}
 
 @end
