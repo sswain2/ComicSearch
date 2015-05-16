@@ -7,6 +7,7 @@
 //
 
 #import "ComicVineClient.h"
+#import "Response.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
@@ -45,10 +46,17 @@ static NSString * const format = @"json";
          @"resources": @"volume"
     };
     
-    return [self GET:@"search" parameters:parameters];
+    return [self GET:@"search" parameters:parameters resultClass:Nil];
 }
 
 #pragma mark - Private
+
+- (RACSignal *)GET:(NSString *)path parameters:(NSDictionary *)parameters resultClass:(Class)resultClass
+{
+    return [[self GET:path parameters:parameters] map:^id(NSDictionary * JSONDictionary) {
+        return [Response responseWithJSONDictionary:JSONDictionary resultClass:resultClass];
+    }];
+}
 
 - (RACSignal *)GET:(NSString *)path parameters:(NSDictionary *)parameters {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
