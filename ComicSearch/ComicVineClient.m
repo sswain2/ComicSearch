@@ -60,7 +60,7 @@ static NSString * const format = @"json";
 }
 
 - (RACSignal *)GET:(NSString *)path parameters:(NSDictionary *)parameters {
-    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+    return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
         AFHTTPRequestOperation *operation = [self.requestManager GET:path parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             [subscriber sendNext:responseObject];
@@ -72,7 +72,7 @@ static NSString * const format = @"json";
         return [RACDisposable disposableWithBlock:^{
             [operation cancel];
         }];
-    }];
+    }] deliverOn:[RACScheduler scheduler]];
 }
 
 @end
