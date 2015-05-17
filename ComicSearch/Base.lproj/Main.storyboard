@@ -23,16 +23,52 @@
         <scene sceneID="MLF-qt-c6p">
             <objects>
                 <tableViewController id="wv5-rQ-Ked" customClass="SearchViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dsg-CD-1gf">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="22" sectionFooterHeight="22" id="dsg-CD-1gf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" id="mjc-Gk-nDe">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" id="mjc-Gk-nDe" customClass="SearchResultCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mjc-Gk-nDe" id="DJr-1D-Zuz">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fPQ-9w-mIt">
+                                            <rect key="frame" x="15" y="8" width="56" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="56" id="Hjq-7Z-9GS"/>
+                                                <constraint firstAttribute="height" constant="80" id="NSf-LK-cKt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRz-OS-kpf">
+                                            <rect key="frame" x="79" y="8" width="44" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLr-vi-nOH">
+                                            <rect key="frame" x="79" y="31" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fLr-vi-nOH" secondAttribute="trailing" constant="20" symbolic="YES" id="4yX-Sn-3G3"/>
+                                        <constraint firstItem="gRz-OS-kpf" firstAttribute="top" secondItem="DJr-1D-Zuz" secondAttribute="top" constant="8" id="7dy-5b-Sky"/>
+                                        <constraint firstItem="fPQ-9w-mIt" firstAttribute="top" secondItem="DJr-1D-Zuz" secondAttribute="top" constant="8" id="AUY-7s-J7d"/>
+                                        <constraint firstItem="fLr-vi-nOH" firstAttribute="top" secondItem="gRz-OS-kpf" secondAttribute="bottom" constant="2" id="Lea-UU-vgq"/>
+                                        <constraint firstItem="gRz-OS-kpf" firstAttribute="leading" secondItem="fPQ-9w-mIt" secondAttribute="trailing" constant="8" id="egL-b1-GAO"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gRz-OS-kpf" secondAttribute="trailing" constant="20" symbolic="YES" id="uVl-h1-n2d"/>
+                                        <constraint firstItem="fLr-vi-nOH" firstAttribute="leading" secondItem="fPQ-9w-mIt" secondAttribute="trailing" constant="8" id="wC5-QJ-B6x"/>
+                                        <constraint firstItem="fPQ-9w-mIt" firstAttribute="leading" secondItem="DJr-1D-Zuz" secondAttribute="leading" constant="15" id="waV-Ks-wmP"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="coverImageView" destination="fPQ-9w-mIt" id="Ied-TA-kdh"/>
+                                    <outlet property="publisherLabel" destination="fLr-vi-nOH" id="JCX-wj-Tdc"/>
+                                    <outlet property="titleLabel" destination="gRz-OS-kpf" id="tk6-uH-p1B"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

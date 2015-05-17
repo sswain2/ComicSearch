@@ -20,6 +20,9 @@
 		B41D7BCB1B06476500516C05 /* SuggestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D7BCA1B06476500516C05 /* SuggestionsViewController.m */; };
 		B41D7BCF1B064DAF00516C05 /* SuggestionsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D7BCE1B064DAF00516C05 /* SuggestionsViewModel.m */; };
 		B449BEADF6C40BBFC8063450 /* libPods-ComicSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73499A4924D3EA6B6423EB2B /* libPods-ComicSearch.a */; };
+		B47500E91B0898F0003AA127 /* SearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B47500E81B0898F0003AA127 /* SearchViewModel.m */; };
+		B47500EC1B08992F003AA127 /* SearchResultViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B47500EB1B08992F003AA127 /* SearchResultViewModel.m */; };
+		B47500F01B08A119003AA127 /* SearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B47500EF1B08A119003AA127 /* SearchResultCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		B41D7BCA1B06476500516C05 /* SuggestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsViewController.m; sourceTree = "<group>"; };
 		B41D7BCD1B064DAF00516C05 /* SuggestionsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionsViewModel.h; sourceTree = "<group>"; };
 		B41D7BCE1B064DAF00516C05 /* SuggestionsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionsViewModel.m; sourceTree = "<group>"; };
+		B47500E71B0898F0003AA127 /* SearchViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewModel.h; sourceTree = "<group>"; };
+		B47500E81B0898F0003AA127 /* SearchViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewModel.m; sourceTree = "<group>"; };
+		B47500EA1B08992F003AA127 /* SearchResultViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewModel.h; sourceTree = "<group>"; };
+		B47500EB1B08992F003AA127 /* SearchResultViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewModel.m; sourceTree = "<group>"; };
+		B47500EE1B08A119003AA127 /* SearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultCell.h; sourceTree = "<group>"; };
+		B47500EF1B08A119003AA127 /* SearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +129,7 @@
 		B41D7B9B1B063F9400516C05 /* ComicSearch */ = {
 			isa = PBXGroup;
 			children = (
+				B47500ED1B08A0E3003AA127 /* Views */,
 				B41D7BCC1B064D7700516C05 /* View Models */,
 				B41D7BC81B06472700516C05 /* Controllers */,
 				B41D7BA01B063F9400516C05 /* AppDelegate.h */,
@@ -180,8 +190,21 @@
 			children = (
 				B41D7BCD1B064DAF00516C05 /* SuggestionsViewModel.h */,
 				B41D7BCE1B064DAF00516C05 /* SuggestionsViewModel.m */,
+				B47500E71B0898F0003AA127 /* SearchViewModel.h */,
+				B47500E81B0898F0003AA127 /* SearchViewModel.m */,
+				B47500EA1B08992F003AA127 /* SearchResultViewModel.h */,
+				B47500EB1B08992F003AA127 /* SearchResultViewModel.m */,
 			);
 			name = "View Models";
+			sourceTree = "<group>";
+		};
+		B47500ED1B08A0E3003AA127 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B47500EE1B08A119003AA127 /* SearchResultCell.h */,
+				B47500EF1B08A119003AA127 /* SearchResultCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,12 +343,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41D7BCB1B06476500516C05 /* SuggestionsViewController.m in Sources */,
+				B47500E91B0898F0003AA127 /* SearchViewModel.m in Sources */,
 				B41D7BCF1B064DAF00516C05 /* SuggestionsViewModel.m in Sources */,
 				B41A26951B07801B005D7B67 /* Response.m in Sources */,
 				B41A26981B079094005D7B67 /* Volume.m in Sources */,
 				B41D7BA21B063F9400516C05 /* AppDelegate.m in Sources */,
 				B41D7BC71B06417C00516C05 /* SearchViewController.m in Sources */,
+				B47500EC1B08992F003AA127 /* SearchResultViewModel.m in Sources */,
 				B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */,
+				B47500F01B08A119003AA127 /* SearchResultCell.m in Sources */,
 				B41D7B9F1B063F9400516C05 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

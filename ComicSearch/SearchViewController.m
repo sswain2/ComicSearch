@@ -9,7 +9,14 @@
 #import "SearchViewController.h"
 #import "SuggestionsViewController.h"
 
+#import "SearchViewModel.h"
+#import "SearchResultCell.h"
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 @interface SearchViewController ()<SuggestionsViewControllerDelegate, UISearchBarDelegate>
+
+@property (strong, nonatomic) SearchViewModel *viewModel;
 
 @end
 
@@ -17,12 +24,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.viewModel = [SearchViewModel new];
+    
+    @weakify(self);
+    [self.viewModel.didUpdateResults subscribeNext:^(id x) {
+        @strongify(self);
+        [self.tableView reloadData];
+    }];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.viewModel.numberOfResults;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SearchResultCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchResultCell"];
+    
+    SearchResultViewModel *result = [self.viewModel resultAtIndex:indexPath.row];
+    [cell configureWithSearchResult:result];
+    
+    return cell;
 }
 
 #pragma mark - SuggestionsViewControllerDelegate
@@ -31,8 +55,7 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    // TODO: implementar
-    NSLog(@"didSelectSuggestion: %@", suggestion);
+    self.viewModel.query = suggestion;
 }
 
 #pragma mark - UISearchBarDelegate
@@ -40,8 +63,7 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    // TODO: implementar
-    NSLog(@"searchBarButtonClicked: %@", searchBar.text);
+    self.viewModel.query = searchBar.text;
 }
 
 #pragma mark - Actions
