@@ -13,12 +13,14 @@
 #import "Response.h"
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Groot/Groot.h>
 
 @interface SearchViewModel ()
 
 @property (strong, nonatomic) ComicVineClient *client;
 @property (nonatomic) NSUInteger currentPage;
 
+@property (strong, nonatomic) GRTManagedStore *store;
 @property (strong, nonatomic) NSManagedObjectContext *privateContext;
 @property (strong, nonatomic) NSManagedObjectContext *mainContext;
 
@@ -26,11 +28,25 @@
 
 @implementation SearchViewModel
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
         _client = [ComicVineClient new];
         _currentPage = 1;
+        
+        _store = [GRTManagedStore temporaryManagedStore];
+        _mainContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+        _mainContext.persistentStoreCoordinator = _store.persistentStoreCoordinator;
+        
+        _privateContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        _privateContext.persistentStoreCoordinator = _store.persistentStoreCoordinator;
+        
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        [nc addObserver:self selector:@selector(privateContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:_privateContext];
     }
     return self;
 }
@@ -68,9 +84,23 @@
 }
 
 - (RACSignal *)fetchNextPage {
-    return [[[self.client fetchVolumesWithQuery:self.query page:self.currentPage++] doNext:^(Response *value) {
-        // TODO: save data
+    NSManagedObjectContext *context = self.privateContext;
+    
+    return [[[self.client fetchVolumesWithQuery:self.query page:self.currentPage++] doNext:^(Response *response) {
+        [GRTJSONSerialization insertObjectsForEntityName:@"Volume" fromJSONArray:response.results inManagedObjectContext:context error:NULL];
+        
+        [context performBlockAndWait:^{
+            [context save:NULL];
+        }];
     }] deliverOnMainThread];
+}
+
+- (void)privateContextDidSave:(NSNotification *)notification {
+    NSManagedObjectContext *context = self.mainContext;
+    
+    [context performBlock:^{
+        [context mergeChangesFromContextDidSaveNotification:notification];
+    }];
 }
 
 @end

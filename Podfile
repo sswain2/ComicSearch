@@ -5,6 +5,7 @@ target 'ComicSearch' do
   pod 'ReactiveCocoa'
   pod 'AFNetworking'
   pod 'Mantle'
+  pod 'Groot'
 end
 
 target 'ComicSearchTests' do
