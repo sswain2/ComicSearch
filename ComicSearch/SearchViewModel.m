@@ -15,7 +15,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <Groot/Groot.h>
 
-@interface SearchViewModel ()
+@interface SearchViewModel () <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) ComicVineClient *client;
 @property (nonatomic) NSUInteger currentPage;
@@ -23,6 +23,8 @@
 @property (strong, nonatomic) GRTManagedStore *store;
 @property (strong, nonatomic) NSManagedObjectContext *privateContext;
 @property (strong, nonatomic) NSManagedObjectContext *mainContext;
+
+@property (strong, nonatomic) NSFetchedResultsController *frc;
 
 @end
 
@@ -47,8 +49,19 @@
         
         NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
         [nc addObserver:self selector:@selector(privateContextDidSave:) name:NSManagedObjectContextDidSaveNotification object:_privateContext];
+        
+        _frc = [[NSFetchedResultsController alloc] initWithFetchRequest:[ManagedVolume fetchRequestForAllVolumes] managedObjectContext:_mainContext sectionNameKeyPath:nil cacheName:nil];
+        _frc.delegate = self;
+        
+        [_frc performFetch:NULL];
+        
+        _didUpdateResults = [self rac_signalForSelector:@selector(controllerDidChangeContent:)];
     }
     return self;
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
 }
 
 - (void)setQuery:(NSString *)query {
@@ -59,14 +72,17 @@
 }
 
 - (NSUInteger)numberOfResults {
-    // FIXME: temporary
-    return 1;
+    id<NSFetchedResultsSectionInfo> sectionInfo = self.frc.sections[0];
+    return [sectionInfo numberOfObjects];
 }
 
 - (SearchResultViewModel *)resultAtIndex:(NSUInteger)index
 {
-    // FIXME: temporary
-    return nil;
+    ManagedVolume *volume = [self.frc objectAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+    
+    return [[SearchResultViewModel alloc] initWithImageURL:[NSURL URLWithString:volume.imageURL]
+                                                     title:volume.title
+                                                 publisher:volume.publisher];
 }
 
 #pragma mark - Private
