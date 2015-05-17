@@ -23,6 +23,8 @@
 		B47500E91B0898F0003AA127 /* SearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B47500E81B0898F0003AA127 /* SearchViewModel.m */; };
 		B47500EC1B08992F003AA127 /* SearchResultViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B47500EB1B08992F003AA127 /* SearchResultViewModel.m */; };
 		B47500F01B08A119003AA127 /* SearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B47500EF1B08A119003AA127 /* SearchResultCell.m */; };
+		B47500F41B08BFB9003AA127 /* Search.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B47500F21B08BFB9003AA127 /* Search.xcdatamodeld */; };
+		B47500F71B08C111003AA127 /* ManagedVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = B47500F61B08C111003AA127 /* ManagedVolume.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		B47500EB1B08992F003AA127 /* SearchResultViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewModel.m; sourceTree = "<group>"; };
 		B47500EE1B08A119003AA127 /* SearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultCell.h; sourceTree = "<group>"; };
 		B47500EF1B08A119003AA127 /* SearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultCell.m; sourceTree = "<group>"; };
+		B47500F31B08BFB9003AA127 /* Search.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Search.xcdatamodel; sourceTree = "<group>"; };
+		B47500F51B08C111003AA127 /* ManagedVolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedVolume.h; sourceTree = "<group>"; };
+		B47500F61B08C111003AA127 /* ManagedVolume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedVolume.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,7 @@
 		B41D7B9B1B063F9400516C05 /* ComicSearch */ = {
 			isa = PBXGroup;
 			children = (
+				B47500F11B08BF8C003AA127 /* Models */,
 				B47500ED1B08A0E3003AA127 /* Views */,
 				B41D7BCC1B064D7700516C05 /* View Models */,
 				B41D7BC81B06472700516C05 /* Controllers */,
@@ -140,10 +146,6 @@
 				B41D7B9C1B063F9400516C05 /* Supporting Files */,
 				B41A26901B07583F005D7B67 /* ComicVineClient.h */,
 				B41A26911B07583F005D7B67 /* ComicVineClient.m */,
-				B41A26931B07801B005D7B67 /* Response.h */,
-				B41A26941B07801B005D7B67 /* Response.m */,
-				B41A26961B079094005D7B67 /* Volume.h */,
-				B41A26971B079094005D7B67 /* Volume.m */,
 			);
 			path = ComicSearch;
 			sourceTree = "<group>";
@@ -205,6 +207,20 @@
 				B47500EF1B08A119003AA127 /* SearchResultCell.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		B47500F11B08BF8C003AA127 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B41A26931B07801B005D7B67 /* Response.h */,
+				B41A26941B07801B005D7B67 /* Response.m */,
+				B41A26961B079094005D7B67 /* Volume.h */,
+				B41A26971B079094005D7B67 /* Volume.m */,
+				B47500F21B08BFB9003AA127 /* Search.xcdatamodeld */,
+				B47500F51B08C111003AA127 /* ManagedVolume.h */,
+				B47500F61B08C111003AA127 /* ManagedVolume.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,12 +361,14 @@
 				B41D7BCB1B06476500516C05 /* SuggestionsViewController.m in Sources */,
 				B47500E91B0898F0003AA127 /* SearchViewModel.m in Sources */,
 				B41D7BCF1B064DAF00516C05 /* SuggestionsViewModel.m in Sources */,
+				B47500F71B08C111003AA127 /* ManagedVolume.m in Sources */,
 				B41A26951B07801B005D7B67 /* Response.m in Sources */,
 				B41A26981B079094005D7B67 /* Volume.m in Sources */,
 				B41D7BA21B063F9400516C05 /* AppDelegate.m in Sources */,
 				B41D7BC71B06417C00516C05 /* SearchViewController.m in Sources */,
 				B47500EC1B08992F003AA127 /* SearchResultViewModel.m in Sources */,
 				B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */,
+				B47500F41B08BFB9003AA127 /* Search.xcdatamodeld in Sources */,
 				B47500F01B08A119003AA127 /* SearchResultCell.m in Sources */,
 				B41D7B9F1B063F9400516C05 /* main.m in Sources */,
 			);
@@ -561,6 +579,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B47500F21B08BFB9003AA127 /* Search.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B47500F31B08BFB9003AA127 /* Search.xcdatamodel */,
+			);
+			currentVersion = B47500F31B08BFB9003AA127 /* Search.xcdatamodel */;
+			path = Search.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B41D7B911B063F9400516C05 /* Project object */;
 }

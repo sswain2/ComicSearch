@@ -50,6 +50,20 @@ static NSString * const format = @"json";
     return [self GET:@"search" parameters:parameters resultClass:[Volume class]];
 }
 
+- (RACSignal *)fetchVolumesWithQuery:(NSString *)query page:(NSUInteger)page {
+        NSDictionary *parameters = @{
+         @"api_key": APIKey,
+         @"format": format,
+         @"field_list": @"id,image,name,publisher",
+         @"limit": @20,
+         @"page": @(page),
+         @"query": query,
+         @"resources": @"volume"
+    };
+    
+    return [self GET:@"search" parameters:parameters resultClass:Nil];
+}
+
 #pragma mark - Private
 
 - (RACSignal *)GET:(NSString *)path parameters:(NSDictionary *)parameters resultClass:(Class)resultClass

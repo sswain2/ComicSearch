@@ -14,4 +14,7 @@
 
 - (RACSignal *)fetchSuggestedVolumesWithQuery:(NSString *)query;
 
+- (RACSignal *)fetchVolumesWithQuery:(NSString *)query
+                                page:(NSUInteger)page;
+
 @end

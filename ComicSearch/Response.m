@@ -22,10 +22,14 @@
     
     id results = JSONDictionary[@"results"];
     
-    if ([results isKindOfClass:[NSArray class]]) {
-        response.results = [MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:results error:NULL];
+    if (resultClass != Nil) {
+        if ([results isKindOfClass:[NSArray class]]) {
+            response.results = [MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:results error:NULL];
+        } else {
+            response.results = [MTLJSONAdapter modelOfClass:resultClass fromJSONDictionary:results error:NULL];
+        }
     } else {
-        response.results = [MTLJSONAdapter modelOfClass:resultClass fromJSONDictionary:results error:NULL];
+        response.results = results;
     }
     
     return response;
