@@ -94,6 +94,7 @@
     
     [context performBlock:^{
         [ManagedVolume deleteAllVolumesInManagedObjectContext:context];
+        [context save:NULL];
     }];
     
     [[[self fetchNextPage] publish] connect];
