@@ -45,9 +45,11 @@
             return [self fetchSuggestionsWithQuery:query];
         }];
         
-        RAC(self, suggestions) = suggestionsSignal;
+        RAC(self, suggestions) = [suggestionsSignal catch:^RACSignal *(NSError *error) {
+            return [RACSignal return:@[error.localizedDescription]];
+        }];
         
-        _didUpdateSuggestionsSignal = [suggestionsSignal mapReplace:nil];
+        _didUpdateSuggestionsSignal = [RACObserve(self, suggestions) mapReplace:nil];
     }
     return self;
 }
