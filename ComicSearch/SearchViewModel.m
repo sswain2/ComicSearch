@@ -85,6 +85,10 @@
                                                  publisher:volume.publisher];
 }
 
+- (void)fetchMoreResults {
+    [[[self fetchNextPage] publish] connect];
+}
+
 #pragma mark - Private
 
 - (void)beginNewSearch {
