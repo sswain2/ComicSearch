@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825F938C1BB828B700132F0B /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 825F938B1BB828B700132F0B /* Character.m */; settings = {ASSET_TAGS = (); }; };
 		B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26911B07583F005D7B67 /* ComicVineClient.m */; };
 		B41A26951B07801B005D7B67 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26941B07801B005D7B67 /* Response.m */; };
 		B41A26981B079094005D7B67 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26971B079094005D7B67 /* Volume.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		5CA07D1C1B6C80CBA0C2521D /* Pods-ComicSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComicSearch/Pods-ComicSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		73499A4924D3EA6B6423EB2B /* libPods-ComicSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		825F938A1BB828B700132F0B /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		825F938B1BB828B700132F0B /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		A2DE04F7D128956EB7D58E54 /* Pods-ComicSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComicSearch/Pods-ComicSearch.release.xcconfig"; sourceTree = "<group>"; };
 		B41A26901B07583F005D7B67 /* ComicVineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicVineClient.h; sourceTree = "<group>"; };
 		B41A26911B07583F005D7B67 /* ComicVineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicVineClient.m; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				B41A26941B07801B005D7B67 /* Response.m */,
 				B41A26961B079094005D7B67 /* Volume.h */,
 				B41A26971B079094005D7B67 /* Volume.m */,
+				825F938A1BB828B700132F0B /* Character.h */,
+				825F938B1BB828B700132F0B /* Character.m */,
 				B47500F21B08BFB9003AA127 /* Search.xcdatamodeld */,
 				B47500F51B08C111003AA127 /* ManagedVolume.h */,
 				B47500F61B08C111003AA127 /* ManagedVolume.m */,
@@ -359,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41D7BCB1B06476500516C05 /* SuggestionsViewController.m in Sources */,
+				825F938C1BB828B700132F0B /* Character.m in Sources */,
 				B47500E91B0898F0003AA127 /* SearchViewModel.m in Sources */,
 				B41D7BCF1B064DAF00516C05 /* SuggestionsViewModel.m in Sources */,
 				B47500F71B08C111003AA127 /* ManagedVolume.m in Sources */,
