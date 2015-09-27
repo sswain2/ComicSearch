@@ -33,10 +33,10 @@ PODS:
     - ReactiveCocoa/Core
 
 DEPENDENCIES:
-  - AFNetworking
-  - Groot
-  - Mantle
-  - ReactiveCocoa
+  - AFNetworking (~> 2)
+  - Groot (= 0.2)
+  - Mantle (~> 2)
+  - ReactiveCocoa (~> 2)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -44,4 +44,4 @@ SPEC CHECKSUMS:
   Mantle: d7c75b6fb789b20f7ae30cd0d09435fe545896ff
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.38.2
