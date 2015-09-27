@@ -12,4 +12,6 @@
 
 @property (copy, nonatomic, readonly) NSString *title;
 
+@property (copy, nonatomic, readonly) NSArray *characters;
+
 @end

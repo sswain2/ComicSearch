@@ -85,11 +85,11 @@ static NSString * const format = @"json";
          @"field_list": @"characters",
     };
     
-    return [[self GET:path parameters:parameters resultClass:[Character class]]
+    return [[self GET:path parameters:parameters resultClass:[Volume class]]
             map:^id(Response *response) {
                 // Map the characters to their identifiers...
-                NSArray *characters = response.results;
-                return [characters.rac_sequence map:^id(Character *character) {
+                Volume *volume = response.results;
+                return [volume.characters.rac_sequence map:^id(Character *character) {
                     return character.identifier;
                 }].array;
             }];

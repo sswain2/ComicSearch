@@ -7,13 +7,19 @@
 //
 
 #import "Volume.h"
+#import "Character.h"
 
 @implementation Volume
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-         @"title": @"name"
+         @"title": @"name",
+         @"characters": @"characters"
     };
+}
+
++ (NSValueTransformer *)charactersJSONTransformer {
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[Character class]];
 }
 
 @end
