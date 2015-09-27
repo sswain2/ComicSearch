@@ -1,5 +1,5 @@
 //
-//  CharacterViewController.h
+//  CharactersViewController.h
 //  ComicSearch
 //
 //  Created by Guillermo Gonzalez on 27/09/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CharacterViewController : UITableViewController
+@interface CharactersViewController : UITableViewController
 
 @property (copy, nonatomic) NSNumber *volumeIdentifier;
 

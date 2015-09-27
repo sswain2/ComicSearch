@@ -1,18 +1,18 @@
 //
-//  CharacterViewController.m
+//  CharactersViewController.m
 //  ComicSearch
 //
 //  Created by Guillermo Gonzalez on 27/09/15.
 //  Copyright © 2015 Agbo. All rights reserved.
 //
 
-#import "CharacterViewController.h"
+#import "CharactersViewController.h"
 
-@interface CharacterViewController ()
+@interface CharactersViewController ()
 
 @end
 
-@implementation CharacterViewController
+@implementation CharactersViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

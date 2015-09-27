@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		825F938C1BB828B700132F0B /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 825F938B1BB828B700132F0B /* Character.m */; settings = {ASSET_TAGS = (); }; };
-		825F938F1BB82E7A00132F0B /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825F938E1BB82E7A00132F0B /* CharacterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		825F938F1BB82E7A00132F0B /* CharactersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825F938E1BB82E7A00132F0B /* CharactersViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26911B07583F005D7B67 /* ComicVineClient.m */; };
 		B41A26951B07801B005D7B67 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26941B07801B005D7B67 /* Response.m */; };
 		B41A26981B079094005D7B67 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26971B079094005D7B67 /* Volume.m */; };
@@ -44,8 +44,8 @@
 		73499A4924D3EA6B6423EB2B /* libPods-ComicSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComicSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		825F938A1BB828B700132F0B /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
 		825F938B1BB828B700132F0B /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
-		825F938D1BB82E7A00132F0B /* CharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewController.h; sourceTree = "<group>"; };
-		825F938E1BB82E7A00132F0B /* CharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewController.m; sourceTree = "<group>"; };
+		825F938D1BB82E7A00132F0B /* CharactersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactersViewController.h; sourceTree = "<group>"; };
+		825F938E1BB82E7A00132F0B /* CharactersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersViewController.m; sourceTree = "<group>"; };
 		A2DE04F7D128956EB7D58E54 /* Pods-ComicSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComicSearch/Pods-ComicSearch.release.xcconfig"; sourceTree = "<group>"; };
 		B41A26901B07583F005D7B67 /* ComicVineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicVineClient.h; sourceTree = "<group>"; };
 		B41A26911B07583F005D7B67 /* ComicVineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicVineClient.m; sourceTree = "<group>"; };
@@ -189,8 +189,8 @@
 				B41D7BC61B06417C00516C05 /* SearchViewController.m */,
 				B41D7BC91B06476500516C05 /* SuggestionsViewController.h */,
 				B41D7BCA1B06476500516C05 /* SuggestionsViewController.m */,
-				825F938D1BB82E7A00132F0B /* CharacterViewController.h */,
-				825F938E1BB82E7A00132F0B /* CharacterViewController.m */,
+				825F938D1BB82E7A00132F0B /* CharactersViewController.h */,
+				825F938E1BB82E7A00132F0B /* CharactersViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -369,7 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41D7BCB1B06476500516C05 /* SuggestionsViewController.m in Sources */,
-				825F938F1BB82E7A00132F0B /* CharacterViewController.m in Sources */,
+				825F938F1BB82E7A00132F0B /* CharactersViewController.m in Sources */,
 				825F938C1BB828B700132F0B /* Character.m in Sources */,
 				B47500E91B0898F0003AA127 /* SearchViewModel.m in Sources */,
 				B41D7BCF1B064DAF00516C05 /* SuggestionsViewModel.m in Sources */,

@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="618" y="60"/>
         </scene>
-        <!--Character View Controller-->
+        <!--Characters View Controller-->
         <scene sceneID="zJD-dl-hNb">
             <objects>
-                <tableViewController id="oEf-II-jRJ" customClass="CharacterViewController" sceneMemberID="viewController">
+                <tableViewController id="oEf-II-jRJ" customClass="CharactersViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7rX-OM-iJv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,7 +8,7 @@
 
 #import "SearchViewController.h"
 #import "SuggestionsViewController.h"
-#import "CharacterViewController.h"
+#import "CharactersViewController.h"
 
 #import "SearchViewModel.h"
 #import "SearchResultCell.h"
@@ -99,7 +99,7 @@
 - (void)prepareForCharactersSegue:(UIStoryboardSegue *)segue sender:(SearchResultCell *)sender {
     NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
     NSNumber *identifier = [self.viewModel identifierForResultAtIndex:indexPath.row];
-    CharacterViewController *viewController = segue.destinationViewController;
+    CharactersViewController *viewController = segue.destinationViewController;
     viewController.volumeIdentifier = identifier;
 }
 
