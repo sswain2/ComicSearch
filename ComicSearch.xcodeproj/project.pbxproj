@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		825F938C1BB828B700132F0B /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 825F938B1BB828B700132F0B /* Character.m */; settings = {ASSET_TAGS = (); }; };
 		825F938F1BB82E7A00132F0B /* CharactersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825F938E1BB82E7A00132F0B /* CharactersViewController.m */; settings = {ASSET_TAGS = (); }; };
+		825F93921BB8331700132F0B /* CharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 825F93911BB8331700132F0B /* CharacterCell.m */; settings = {ASSET_TAGS = (); }; };
+		825F93951BB8333100132F0B /* CharacterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 825F93941BB8333100132F0B /* CharacterViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		B41A26921B07583F005D7B67 /* ComicVineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26911B07583F005D7B67 /* ComicVineClient.m */; };
 		B41A26951B07801B005D7B67 /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26941B07801B005D7B67 /* Response.m */; };
 		B41A26981B079094005D7B67 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = B41A26971B079094005D7B67 /* Volume.m */; };
@@ -46,6 +48,10 @@
 		825F938B1BB828B700132F0B /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
 		825F938D1BB82E7A00132F0B /* CharactersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactersViewController.h; sourceTree = "<group>"; };
 		825F938E1BB82E7A00132F0B /* CharactersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersViewController.m; sourceTree = "<group>"; };
+		825F93901BB8331700132F0B /* CharacterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterCell.h; sourceTree = "<group>"; };
+		825F93911BB8331700132F0B /* CharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterCell.m; sourceTree = "<group>"; };
+		825F93931BB8333100132F0B /* CharacterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewModel.h; sourceTree = "<group>"; };
+		825F93941BB8333100132F0B /* CharacterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewModel.m; sourceTree = "<group>"; };
 		A2DE04F7D128956EB7D58E54 /* Pods-ComicSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComicSearch/Pods-ComicSearch.release.xcconfig"; sourceTree = "<group>"; };
 		B41A26901B07583F005D7B67 /* ComicVineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicVineClient.h; sourceTree = "<group>"; };
 		B41A26911B07583F005D7B67 /* ComicVineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicVineClient.m; sourceTree = "<group>"; };
@@ -204,6 +210,8 @@
 				B47500E81B0898F0003AA127 /* SearchViewModel.m */,
 				B47500EA1B08992F003AA127 /* SearchResultViewModel.h */,
 				B47500EB1B08992F003AA127 /* SearchResultViewModel.m */,
+				825F93931BB8333100132F0B /* CharacterViewModel.h */,
+				825F93941BB8333100132F0B /* CharacterViewModel.m */,
 			);
 			name = "View Models";
 			sourceTree = "<group>";
@@ -213,6 +221,8 @@
 			children = (
 				B47500EE1B08A119003AA127 /* SearchResultCell.h */,
 				B47500EF1B08A119003AA127 /* SearchResultCell.m */,
+				825F93901BB8331700132F0B /* CharacterCell.h */,
+				825F93911BB8331700132F0B /* CharacterCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -368,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825F93951BB8333100132F0B /* CharacterViewModel.m in Sources */,
 				B41D7BCB1B06476500516C05 /* SuggestionsViewController.m in Sources */,
 				825F938F1BB82E7A00132F0B /* CharactersViewController.m in Sources */,
 				825F938C1BB828B700132F0B /* Character.m in Sources */,
@@ -375,6 +386,7 @@
 				B41D7BCF1B064DAF00516C05 /* SuggestionsViewModel.m in Sources */,
 				B47500F71B08C111003AA127 /* ManagedVolume.m in Sources */,
 				B41A26951B07801B005D7B67 /* Response.m in Sources */,
+				825F93921BB8331700132F0B /* CharacterCell.m in Sources */,
 				B41A26981B079094005D7B67 /* Volume.m in Sources */,
 				B41D7BA21B063F9400516C05 /* AppDelegate.m in Sources */,
 				B41D7BC71B06417C00516C05 /* SearchViewController.m in Sources */,
