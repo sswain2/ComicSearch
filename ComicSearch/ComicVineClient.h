@@ -17,4 +17,6 @@
 - (RACSignal *)fetchVolumesWithQuery:(NSString *)query
                                 page:(NSUInteger)page;
 
+- (RACSignal *)fetchCharactersForVolumeWithIdentifier:(NSNumber *)identifier;
+
 @end

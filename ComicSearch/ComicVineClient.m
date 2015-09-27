@@ -9,6 +9,7 @@
 #import "ComicVineClient.h"
 #import "Response.h"
 #import "Volume.h"
+#import "Character.h"
 
 #import <AFNetworking/AFNetworking.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
@@ -51,7 +52,7 @@ static NSString * const format = @"json";
 }
 
 - (RACSignal *)fetchVolumesWithQuery:(NSString *)query page:(NSUInteger)page {
-        NSDictionary *parameters = @{
+    NSDictionary *parameters = @{
          @"api_key": APIKey,
          @"format": format,
          @"field_list": @"id,image,name,publisher",
@@ -64,7 +65,48 @@ static NSString * const format = @"json";
     return [self GET:@"search" parameters:parameters resultClass:Nil];
 }
 
+- (RACSignal *)fetchCharactersForVolumeWithIdentifier:(NSNumber *)identifier {
+    return [[self fetchCharacterIdentifiersForVolumeWithIdentifier:identifier]
+            flattenMap:^RACStream *(NSArray *identifiers) {
+                return [self fetchCharactersWithIdentifiers:identifiers];
+            }];
+}
+
 #pragma mark - Private
+
+- (RACSignal *)fetchCharacterIdentifiersForVolumeWithIdentifier:(NSNumber *)identifier {
+    NSParameterAssert(identifier);
+    
+    NSString *path = [NSString stringWithFormat:@"volume/4050-%@", identifier];
+    
+    NSDictionary *parameters = @{
+         @"api_key": APIKey,
+         @"format": format,
+         @"field_list": @"characters",
+    };
+    
+    return [[self GET:path parameters:parameters resultClass:[Character class]]
+            map:^id(Response *response) {
+                // Map the characters to their identifiers...
+                NSArray *characters = response.results;
+                return [characters.rac_sequence map:^id(Character *character) {
+                    return character.identifier;
+                }].array;
+            }];
+}
+
+- (RACSignal *)fetchCharactersWithIdentifiers:(NSArray *)identifiers {
+    NSString *filter = [NSString stringWithFormat:@"id:%@", [identifiers componentsJoinedByString:@"|"]];
+    
+    NSDictionary *parameters = @{
+         @"api_key": APIKey,
+         @"format": format,
+         @"filter": filter,
+         @"field_list": @"name,image",
+    };
+    
+    return [self GET:@"characters" parameters:parameters resultClass:[Character class]];
+}
 
 - (RACSignal *)GET:(NSString *)path parameters:(NSDictionary *)parameters resultClass:(Class)resultClass
 {
