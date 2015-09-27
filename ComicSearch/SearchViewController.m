@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import "SuggestionsViewController.h"
+#import "CharacterViewController.h"
 
 #import "SearchViewModel.h"
 #import "SearchResultCell.h"
@@ -32,6 +33,12 @@
         @strongify(self);
         [self.tableView reloadData];
     }];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Characters"]) {
+        [self prepareForCharactersSegue:segue sender:sender];
+    }
 }
 
 #pragma mark - Table view data source
@@ -85,6 +92,15 @@
     searchController.searchBar.delegate = self;
     
     [self presentViewController:searchController animated:YES completion:nil];
+}
+
+#pragma mark - Private
+
+- (void)prepareForCharactersSegue:(UIStoryboardSegue *)segue sender:(SearchResultCell *)sender {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    NSNumber *identifier = [self.viewModel identifierForResultAtIndex:indexPath.row];
+    CharacterViewController *viewController = segue.destinationViewController;
+    viewController.volumeIdentifier = identifier;
 }
 
 @end

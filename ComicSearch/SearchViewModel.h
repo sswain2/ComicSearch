@@ -21,6 +21,8 @@
 
 - (SearchResultViewModel *)resultAtIndex:(NSUInteger)index;
 
+- (NSNumber *)identifierForResultAtIndex:(NSUInteger)index;
+
 - (void)fetchMoreResults;
 
 @end

@@ -85,6 +85,11 @@
                                                  publisher:volume.publisher];
 }
 
+- (NSNumber *)identifierForResultAtIndex:(NSUInteger)index {
+    ManagedVolume *volume = [self.frc objectAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+    return volume.identifier;
+}
+
 - (void)fetchMoreResults {
     [[[self fetchNextPage] publish] connect];
 }
